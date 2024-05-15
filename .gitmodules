@@ -1,0 +1,3 @@
+[submodule "paredSur"]
+        path = paredSur
+        url = https://github.com/Jolivera10/paredsur.git
