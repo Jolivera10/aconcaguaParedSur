@@ -5,7 +5,7 @@ import Button from '~/components/ui/Button.astro';
 const { inputs, textarea, disclaimer, button = 'Contactáctenos', description = '' } = Astro.props;
 ---
 
-<form>
+<form action="https://formsubmit.co/julianoliveraballs@gmail.com" method="POST">
   {
     inputs &&
       inputs.map(
@@ -16,6 +16,7 @@ const { inputs, textarea, disclaimer, button = 'Contactáctenos', description = 
                 <label for={name} class="block text-sm font-medium">
                   {label}
                 </label>
+                
               )}
               <input
                 type={type}
@@ -25,6 +26,17 @@ const { inputs, textarea, disclaimer, button = 'Contactáctenos', description = 
                 placeholder={placeholder}
                 class="py-3 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
               />
+              <input
+              type="hidden"
+              name="_next"
+              value="http://localhost:4321/"
+              /> <input
+              type="hidden"
+              name="_captcha"
+              value="false"
+              />
+              
+              
             </div>
           )
       )
@@ -84,4 +96,5 @@ const { inputs, textarea, disclaimer, button = 'Contactáctenos', description = 
       </div>
     )
   }
+   
 </form>

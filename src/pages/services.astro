@@ -1,91 +1,26 @@
 ---
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Content from '~/components/widgets/Content.astro';
-import Features2 from '~/components/widgets/Features2.astro';
-import Hero from '~/components/widgets/Hero.astro';
+import Hero3 from '~/components/widgets/Hero3.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'Services',
+  title: 'Trekkings',
 };
 ---
 
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero
-    tagline="Services"
-    title="Elevate your projects with our stunning templates"
-    subtitle="Explore our meticulously crafted templates tailored to various industries and purposes. From captivating presentations to functional website designs, we offer the tools you need to succeed."
-    actions={[{ variant: 'primary', target: '_blank', text: 'Start exploring', href: '/' }]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'AstroWind Hero Image',
-    }}
+  <Hero3
+    tagline="Trekkings"
+    title="Aventuráte al Aconcagua con nuestros servicios para escalarla."
+    subtitle="Los trekkings en el Parque Aconcagua premian al visitante con una vista magnífica y la emocionante experiencia de acercarse a la base de la mítica Pared Sur del Aconcagua, con sus casi 3.000 metros de altura y cubierto de glaciares colgantes, es una de las más grandes del mundo... "
+  
   />
 
   <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Explore our diverse templates"
-    subtitle="Discover our selection below to streamline and elevate your projects."
-    columns={3}
-    items={[
-      {
-        title: 'Educational',
-        description:
-          'By harmonizing instructional design and visual appeal, templates streamline content creation for varied materials, expediting development and cultivating engaging educational spaces.',
-        icon: 'tabler:school',
-      },
-      {
-        title: 'Interior Design',
-        description:
-          'Crafting functional, visually appealing spaces for residential and commercial use. Templates emphasize layout, colors, and furniture setups, offering a versatile toolkit for your design vision.',
-        icon: 'tabler:home-star',
-      },
-      {
-        title: 'Photography',
-        description: `Empowering photographers, our templates facilitate captivating storytelling. With a keen focus on layout, galleries, and typography, they cater to both professionals and enthusiasts.`,
-        icon: 'tabler:photo',
-      },
-      {
-        title: 'E-commerce',
-        description:
-          'Developing engaging online stores, our E-commerce templates ensure a dynamic presence to effectively showcase products. Ideal for startups or revamps.',
-        icon: 'tabler:shopping-cart',
-      },
-      {
-        title: 'Blog',
-        description:
-          'With attention to typography, these templates empower effective content presentation for writers at any stage, ensuring visually engaging and user-friendly blogs.',
-        icon: 'tabler:article',
-      },
-      {
-        title: 'Business',
-        description:
-          'Providing polished options for effective visual communication, these templates empower both startups and established companies for a professional brand presence.',
-        icon: 'tabler:building-store',
-      },
-      {
-        title: 'Branding',
-        description:
-          'Offering pre-designed elements for a consistent brand identity, including logos and marketing materials. Ideal for new ventures or revamps.',
-        icon: 'tabler:arrow-big-up-lines',
-      },
-      {
-        title: 'Medical',
-        description: `From presentations to patient forms, these tools enhance communication effectiveness for healthcare professionals. Ideal for medical practices and research pursuits.`,
-        icon: 'tabler:vaccine',
-      },
-      {
-        title: 'Fashion Design',
-        description:
-          'With attention to detail, customization, and contemporary design, they empower designers to showcase ideas cohesively. Ideal for all levels of designers.',
-        icon: 'tabler:tie',
-      },
-    ]}
-  />
 
   <!-- Content Widget **************** -->
 
@@ -93,37 +28,31 @@ const metadata = {
     isReversed
     items={[
       {
-        title: 'High-Quality Designs',
+        title: 'Aconcagua desde adentro',
         description:
-          'Our templates feature top-tier designs that ensure a professional and polished appearance for your projects.',
-        icon: 'tabler:wand',
+          'El Aconcagua ... . Antiguo altar Incas nos deslumbra con su paisaje primitivo y hermoso. Un viaje único en el interior de los Andes, es mucho más que maravillosos paisajes, cielos azules, fuertes vientos y las nubes majestuosas; mucho más que rocas, las estrellas y el silencio...',
+        icon: 'tabler:mountain',
       },
       {
-        title: 'Customization Tools',
+        title: 'Aventura inolvidable',
         description:
-          'Tailor each template to your unique needs with user-friendly customization tools that let you personalize colors, fonts, and content.',
-        icon: 'tabler:settings',
+          'Nos adentramos en el reino del Centinela de Piedra. La aventura comienza en la base de la mítica Pared Sur del Aconcagua, con glaciares colgantes y las paredes de casi 3.000 metros de altura, una de las más grandes del mundo.',
+        icon: 'tabler:shoe',
       },
       {
-        title: 'Pre-Designed Elements',
+        title: 'Debe estar preparado!',
         description:
-          'Save time and effort with our ready-to-use elements, including graphics, icons, and layouts that enhance the visual appeal of your creations.',
-        icon: 'tabler:presentation',
-      },
-      {
-        title: 'Preview and Mockup Views',
-        description:
-          'Visualize the final outcome before making any changes using our preview and mockup views, ensuring your projects meet your expectations.',
-        icon: 'tabler:carousel-horizontal',
+          'Este Programa de Trekking está diseñado para personas con buena salud y estado físico óptimo (por ejemplo capaces de marchar 3 o 4 veces por semana 1 a 2 horas).',
+        icon: 'tabler:heart',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+      src: '~/assets/images/trekking2.jpg',
       alt: 'Features Image',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Main Features</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Trekking Corto - Plaza Francia</h3>
     </Fragment>
   </Content>
 
@@ -133,37 +62,63 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Time Savings',
+        title: 'Descripción',
         description:
-          'Streamline your workflow, enabling you to create stunning materials efficiently and allocate more time to your core tasks.',
-        icon: 'tabler:clock',
+          'La ciudad de tela. La urbe más alta del mundo. La Torre de Babel de carpas. El campamento base Plaza de Mulas en el Parque Aconcagua, a 4.260 m.s.n.m. sobre la ruta normal es una muy especial población de alta montaña que cobra vida cada temporada donde conviven personas de los rincones más exóticos del planeta.',
+        icon: 'tabler:mountain',
       },
       {
-        title: 'Professional Appearance',
+        title: 'Acceso',
         description:
-          'Elevate your projects with the polished and sophisticated look that our templates provide, making a lasting impression on your audience.',
-        icon: 'tabler:school',
+          'El acceso es fácil ya que existe una senda perfectamente marcada por el tránsito permanente de montañeros y ganado. El cruce del río se efectúa por puentes.',
+        icon: 'tabler:shoe',
       },
       {
-        title: 'Cost-Efficiency',
+        title: 'Comunidad expedicionista',
         description:
-          'Benefit from cost savings by avoiding the need for custom design work, as our templates offer professional-grade designs at a fraction of the cost.',
-        icon: 'tabler:coin',
+          'Estar en contacto con gente de todo el mundo, que como nosotros, va en busca de un desafío interior de plena comunión con la montaña.',
+        icon: 'tabler:man',
       },
-      {
-        title: 'Instant Download',
-        description:
-          'Enjoy immediate access to your chosen templates upon purchase, enabling you to begin working on your projects without delay.',
-        icon: 'tabler:file-download',
-      },
+     
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Benefits Image',
+      src: '~/assets/images/plazafrancia.jpg',
+      alt: 'PlazaDeMulas Image',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Benefits</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Trekking Largo - Plaza de Mulas</h3>
+    </Fragment>
+  </Content>
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'Vive la historia',
+        description:
+          'Te llevaremos a conocer y a contemplar de cerca el increíble entorno en donde sucedió una de las más impactantes historias de supervivencia y superación humana. Tres días en el Valle de las Lágrimas, en plena Cordillera de los Andes.',
+        icon: 'tabler:plane',
+      },
+      {
+        title: 'Aventura inolvidable',
+        description:
+          'Trekking avión de los uruguayos es una excursión al lugar donde cayó el avión de los uruguayos en el accidente de 1972, un lugar cargado de mística e historia. Te llevaremos a conocer y a contemplar de cerca el increíble entorno donde trascendió este suceso de supervivencia y superación humana.',
+        icon: 'tabler:camera',
+      },
+      {
+        title: 'Comodidad al máximo',
+        description:
+          'Descansando en confortables campamentos y rodeados de los más experimentados guías, viviremos con emoción, energía y entusiasmo la historia de un grupo de hombres que no se rindieron ante la adversidad',
+        icon: 'tabler:heart',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/avion.jpg',
+      alt: 'Features Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Trekking Valle de Lágrimas - Avión de los Uruguayos</h3>
     </Fragment>
   </Content>
 
@@ -177,7 +132,7 @@ const metadata = {
         name: 'Emily Kennedy',
         job: 'Front-end developer',
         image: {
-          src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
+          src: '~/assets/images/plazademulas.jpg',
           alt: 'Emily Kennedy Image',
         },
       },
@@ -200,12 +155,6 @@ const metadata = {
         },
       },
     ]}
-    callToAction={{
-      target: '_blank',
-      text: 'More testimonials...',
-      href: 'https://github.com/onwidget/astrowind',
-      icon: 'tabler:chevron-right',
-    }}
   />
 
   <!-- CallToAction Widget *********** -->
@@ -214,11 +163,10 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Start exploring',
-        href: '/',
+        text: 'Unirme',
+        href: '/contact',
       },
     ]}
-    title="Dive into our template collection"
-    subtitle="Whether you're in business, design, or education, our templates are here to elevate your projects."
+    subtitle="Te interesaría realizar nuestros trekkings?"
   />
 </Layout>

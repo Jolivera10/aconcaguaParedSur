@@ -3,7 +3,6 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
-import Testimonials from '~/components/widgets/Testimonials.astro';
 import Content from '~/components/widgets/Content.astro';
 import Brands from '~/components/widgets/Brands.astro';
 
@@ -50,7 +49,7 @@ const metadata = {
       {
         title: 'Ruta Normal',
         description:
-          'No presenta ninguna dificultad técnica, es por esto que ésta ruta es enormemente atractiva, permitiendo alcanzar la cumbre a cualquier montañista con buena preparación física y una correcta aclimatación.',
+          'Alcanzá la cumbre del cerro más alto de América, en un programa que incluye el trekking a Plaza Francia para aclimatar',
       },
       {
         title: 'Ruta 360º',
@@ -58,10 +57,17 @@ const metadata = {
           'Combina dos rutas alrededor del Aconcagua, la cara este y noroeste. Ascender a través del valle de Vacas y descender a través de la ruta normal le permite disfrutar de la magnificencia de la montaña más alta de América.',
       },
       {
-        title: 'Falso Polacos',
+        title: 'Ruta Polacos',
+        description:
+          'La ruta Normal Extendida incluye además del trekking a Plaza Francia, el ascenso del cerro Bonete (5000m) como parte de la aclimatación para alcanzar la cumbre del Aconcagua',
+      },
+    
+      {
+        title: 'Ruta Falso Polacos',
         description:
           'A través de esta ruta el Aconcagua nos muestra su cara más rústica. Ésta ruta posee menos tráfico que la ruta normal.',
       },
+      
     ]}
     image={{
       src: '~/assets/images/imagen1.jpg',
@@ -69,7 +75,7 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Expediciones Programadas</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Expediciones</h3>
       Requieren una logística impecable desde nuestra parte y una excelente preparación física y psicológica de los miembros del equipo.
     </Fragment>
 
@@ -84,13 +90,17 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Plaza Francia',
+        title: 'Trekking Corto - Plaza Francia',
         description: `Una caminata muy amigable que te brinda una experiencia emocionante y un fuerte encuentro con la naturaleza. Te lleva a los glaciares de Plaza Francia, en la base del magnífico Muro Sur del Aconcagua con sus 3000 metros verticales.`,
       },
       {
-        title: 'Plaza de Mulas',
+        title: 'Trekking Largo - Plaza de Mulas',
         description:
           'Una aventura donde alcanzarás Plaza Francia y Plaza de Mulas, que te permitirá participar en el mundo exclusivo de los escaladores de todo el mundo, preparándose para la cumbre.',
+      },
+      {
+        title: 'Trekking Valle de Lágrimas - Avión de los Uruguayos',
+        description: `Una caminata que te brindará una experiencia emocionante y un fuerte encuentro con la naturaleza. Llegaremos hasta el lugar donde se vivió el Milagro de los Andes y homenajearemos a los uruguayos que pasaron por esta tragedia.`,
       },
       
     ]}
@@ -154,66 +164,6 @@ const metadata = {
 
   <!-- Steps Widget ****************** -->
 
-  <Testimonials
-  title="Testimonios de Nuestros Clientes."
-  testimonials={[
-    {
-      testimonial: `¡Increíble experiencia con Pared Sur! Su equipo experto nos guió con seguridad y profesionalismo hacia la cumbre del Aconcagua. ¡Una aventura que nunca olvidaré!`,
-      name: 'Matías Mann',
-      job: '',
-      image: {
-        src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
-        alt: 'Emily Kennedy Image',
-      },
-    },
-    {
-      testimonial: `¡Increíble experiencia con Pared Sur! Su equipo experto nos guió con seguridad y profesionalismo hacia la cumbre del Aconcagua. ¡Una aventura que nunca olvidaré!`,
-      name: 'Matías Mann',
-      job: '',
-      image: {
-        src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
-        alt: 'Emily Kennedy Image',
-      },
-    },
-    {
-      testimonial: `¡Increíble experiencia con Pared Sur! Su equipo experto nos guió con seguridad y profesionalismo hacia la cumbre del Aconcagua. ¡Una aventura que nunca olvidaré!`,
-      name: 'Matías Mann',
-      job: '',
-      image: {
-        src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
-        alt: 'Emily Kennedy Image',
-      },
-    },
-    {
-      testimonial: `¡Increíble experiencia con Pared Sur! Su equipo experto nos guió con seguridad y profesionalismo hacia la cumbre del Aconcagua. ¡Una aventura que nunca olvidaré!`,
-      name: 'Matías Mann',
-      job: '',
-      image: {
-        src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
-        alt: 'Emily Kennedy Image',
-      },
-    },
-    {
-      testimonial: `¡Gracias a Pared Sur por una aventura increíble! Su atención personalizada y profesionalismo hicieron que mi ascenso al Aconcagua fuera emocionante y seguro. Cada momento fue memorable y estoy agradecido por haber elegido su servicio.`,
-      name: 'Sofía Constantinidi',
-      job: '',
-      image: {
-        src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-        alt: 'Sarah Hansen Image',
-      },
-    },
-    {
-      testimonial: `Increíble experiencia con Pared Sur. Su equipo no solo nos llevó a la cumbre del Aconcagua de manera segura, sino que también creó un ambiente de camaradería y apoyo. ¡Altamente recomendado para aquellos que buscan una experiencia de montaña inolvidable!`,
-      name: 'Roman Ruberti',
-      job: '',
-      image: {
-        src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
-        alt: 'Mark Wilkinson Image',
-      },
-    },
-  ]}
-/>
-
 
   <!-- Features2 Widget ************** -->
 
@@ -227,46 +177,22 @@ const metadata = {
 
   <Brands
   title="Quality certifications & Supports & Certifications"
-  subtitle="Lorem"
+  subtitle=""
   icons={[]}
   images={[
     {
-      src: 'https://cdn.pixabay.com/photo/2015/05/26/09/37/paypal-784404_1280.png',
-      alt: 'Paypal',
+      src: '~/assets/images/cert2.png',
+      alt: 'Centro',
     },
     {
-      src: 'https://cdn.pixabay.com/photo/2021/12/06/13/48/visa-6850402_1280.png',
-      alt: 'Visa',
+      src: '~/assets/images/cert3.png',
+      alt: 'Guias',
     },
     {
-      src: 'https://cdn.pixabay.com/photo/2013/10/01/10/29/ebay-189064_1280.png',
-      alt: 'Ebay',
+      src: '~/assets/images/cert1.png',
+      alt: 'UOI',
     },
-
-    {
-      src: 'https://cdn.pixabay.com/photo/2015/04/13/17/45/icon-720944_1280.png',
-      alt: 'Youtube',
-    },
-    {
-      src: 'https://cdn.pixabay.com/photo/2013/02/12/09/07/microsoft-80658_1280.png',
-      alt: 'Microsoft',
-    },
-    {
-      src: 'https://cdn.pixabay.com/photo/2015/04/23/17/41/node-js-736399_1280.png',
-      alt: 'Node JS',
-    },
-    {
-      src: 'https://cdn.pixabay.com/photo/2015/10/31/12/54/google-1015751_1280.png',
-      alt: 'Google',
-    },
-    {
-      src: 'https://cdn.pixabay.com/photo/2021/12/06/13/45/meta-6850393_1280.png',
-      alt: 'Meta',
-    },
-    {
-      src: 'https://cdn.pixabay.com/photo/2013/01/29/22/53/yahoo-76684_1280.png',
-      alt: 'Yahoo',
-    },
+   
   ]}
 />
 </Layout>

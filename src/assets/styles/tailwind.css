@@ -90,3 +90,8 @@
 .dd *:first-child {
   margin-top: 0;
 }
+
+.julian {
+  background-image: url(../images/avion.jpg)
+  
+}

@@ -4,11 +4,9 @@ import Layout from '~/layouts/PageLayout.astro';
 import Header from '~/components/widgets/Header.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import Content from '~/components/widgets/Content.astro';
-import Pricing from '~/components/widgets/Pricing.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
 
 import { headerData } from '~/navigation';
-import FAQs from '~/components/widgets/FAQs.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 
 const metadata = {
@@ -70,67 +68,7 @@ const metadata = {
 
   <!-- Content Widget **************** -->
 
-  <Content
-    title="Expediciones en conjunto"
-    subtitle="Elija la mejor modalidad para usted o para su gruopo."
-    isReversed
-    items={[
-      {
-        title: 'De acuerdo a tus preferencias...',
-        description:
-          'Nuestras expediciones programadas dependen de más de 30 fechas de salida disponibles e itinerarios establecidos de antemano con un servicio completo.',
-      },
-      {
-        title: 'Salidas 100% garantizadas.',
-        description: `Este tipo de expediciones ofrece un paquete de precios especiales y la posibilidad de conocer montañistas de todo el mundo. Si estás buscando relacionarte con personas como tu o que comparten intereses comunes, ¡esta podría ser una buena manera de hacerlo! Los grupos tienen un máximo de 12 personas, y una relación de 1 guía cada 3-4 clientes.`,
-      },
-    ]}
-    image={{
-      src: '~/assets/images/expediciones_1.jpg',
-      alt: 'Startup Image',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Expediciones programadas <br /><span class="text-2xl">Más de 30 fechas de salidas – 100% garantizadas</span>
-      </h3>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
   <!-- Content Widget **************** -->
-
-  <Content
-    isAfterContent={true}
-    items={[
-      {
-        title: 'Descripción.',
-        description: `En Pared Sur tenemos programas preestablecidos con el mismo itinerario y servicios de expediciones programadas. Fechas de salida: eliges la mejor fecha según tu conveniencia. Itinerario: puedes elegir nuestro programa preestablecido (recomendado) o proponernos uno como programa. Te aconsejaremos de acuerdo a nuestra experiencia la factibilidad de realizarlo para que pueda llegar a la cima.`,
-      },
-      {
-        title: 'El grupo.',
-        description: `El número de miembros por expedición puede ser de 1 a 12 personas.
-Servicios: Ofrecemos las mejores guías profesionales y la mejor infraestructura en Aconcagua. Transporte, alojamiento, comida … no necesitas preocuparse por nada … solo disfrutar y prepararse para una experiencia inolvidable. `,
-      },
-    ]}
-    image={{
-      src: '~/assets/images/expedicion_privadas.jpg',
-      alt: 'SaaS Businesses Image',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Expediciones privadas <br /><span class="text-2xl">Ideal para grupos que necesitan una expedición exclusiva guiada.</span>
-      </h3>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
 
   <!-- Content Widget **************** -->
 
@@ -140,87 +78,47 @@ Servicios: Ofrecemos las mejores guías profesionales y la mejor infraestructura
 
   <!-- Pricing Widget ******************* -->
 
-  <Pricing
-    title="Planes flexibles"
-    prices={[
-      {
-        title: 'expfasffasfdsssssssss1',
-        subtitle: 'Lorem',
-        price: '0',
-        period: '-',
-        callToAction: {
-          target: '_blank',
-          text: 'for exp1',
-          href: '/contact',
-        },
-      },
-      {
-        title: 'ex2fasfsafs',
-        subtitle: 'Lorem',
-        price: 15,
-        period: '-',
-        callToAction: {
-          target: '_blank',
-          text: 'for ex2',
-          href: '/contact',
-        },
-        hasRibbon: true,
-        ribbonTitle: 'popular',
-      },
-      {
-        title: 'ex3erasafsf',
-        subtitle: 'lorem',
-        price: 45,
-        period: '-',
-        callToAction: {
-          target: '_blank',
-          text: 'for ex3',
-          href: '/contact',
-        },
-      },
-    ]}
-  />
-
   <!-- FAQs Widget ******************* -->
+  <Testimonials
+  title="Testimonios de Nuestros Clientes."
+  testimonials={[
+    {
+      testimonial: `¡Increíble experiencia con Pared Sur! Su equipo experto nos guió con seguridad y profesionalismo hacia la cumbre del Aconcagua. ¡Una aventura que nunca olvidaré!`,
+      name: 'Matías Mann',
+      job: '',
+      image: {
+        src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
+        alt: 'Emily Kennedy Image',
+      },
+    },
+    {
+      testimonial: `¡Increíble experiencia con Pared Sur! Su equipo experto nos guió con seguridad y profesionalismo hacia la cumbre del Aconcagua. ¡Una aventura que nunca olvidaré!`,
+      name: 'Matías Mann',
+      job: '',
+      image: {
+        src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
+        alt: 'Emily Kennedy Image',
+      },
+    },
+    {
+      testimonial: `¡Increíble experiencia con Pared Sur! Su equipo experto nos guió con seguridad y profesionalismo hacia la cumbre del Aconcagua. ¡Una aventura que nunca olvidaré!`,
+      name: 'Matías Mann',
+      job: '',
+      image: {
+        src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
+        alt: 'Emily Kennedy Image',
+      },
+    },
+  ]}
+/>
 
-  <FAQs
-    title="Preguntas frecuentes de nuestros clientes."
-    items={[
-      {
-        title: 'Lorem',
-        description:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-        icon: 'tabler:chevrons-right',
-      },
-      {
-        title: 'Lorem',
-        description:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-        icon: 'tabler:chevrons-right',
-      }, {
-        title: 'Lorem',
-        description:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-        icon: 'tabler:chevrons-right',
-      }, {
-        title: 'Lorem',
-        description:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-        icon: 'tabler:chevrons-right',
-      },
-    ]}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </FAQs>
   <CallToAction
   actions={[
     {
       variant: 'primary',
       target: '_blank',
       text: 'Servicios',
-      href: '/home',
+      href: '/servicescopy',
     },
   ]}
 >

@@ -12,22 +12,22 @@ export const headerData = {
         },
         {
           text: 'Trekkings',
-          href: getPermalink(''),
+          href: getPermalink('/services'),
         },
         {
           text: 'Servicios',
-          href: getPermalink(''),
+          href: getPermalink('/servicescopy'),
         },
        
       ],
     },
     {
       text: 'Aconcagua',
-      href: getPermalink(''),
+      href: getPermalink('/homes/saascopy'),
     },
     {
       text: 'Nosotros',
-      href: getPermalink(''),
+      href: getPermalink('/homes/startup'),
     },
     {
       text: 'Precios',
@@ -37,7 +37,14 @@ export const headerData = {
       text: 'Contacto',
       href: getPermalink('/contact'),
     },
+    
   ],
+  socialLinks: [
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/aconcaguaparedsur?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' },
+    { ariaLabel: 'Gmail', icon: 'tabler:brand-gmail', href: '#' },
+    { ariaLabel: 'Whatsapp', icon: 'tabler:brand-whatsapp', href: '#' },
+    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
+  ]
 
 };
 
@@ -69,11 +76,6 @@ export const footerData = {
       ],
     },
   ],
-  socialLinks: [
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Gmail', icon: 'tabler:brand-gmail', href: '#' },
-    { ariaLabel: 'Whatsapp', icon: 'tabler:brand-whatsapp', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-  ],
+ 
   
 };
