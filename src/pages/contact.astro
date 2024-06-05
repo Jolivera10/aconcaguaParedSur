@@ -1,6 +1,7 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
+import Whatsapp from  '~/components/widgets/Whatsapp.astro';
 import ContactUs from '~/components/widgets/Contact.astro';
 
 const metadata = {
@@ -9,6 +10,15 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
+  <Whatsapp
+  images={[
+    {
+      src: '~/assets/images/WhatsApp_icon.png',
+      alt: 'Centro',
+    }
+  ]}
+/>
+
   <!-- HeroText Widget ******************* -->
 
   <HeroText tagline="Aconcagua Pared Sur" title="Formulario de contacto" />

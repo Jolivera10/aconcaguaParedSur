@@ -1,9 +1,10 @@
 ---
-import CallToAction from '~/components/widgets/CallToAction.astro';
 import Content from '~/components/widgets/Content.astro';
 import Hero3 from '~/components/widgets/Hero3.astro';
+import Whatsapp from  '~/components/widgets/Whatsapp.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 import Layout from '~/layouts/PageLayout.astro';
+import Prices from '~/components/widgets/Pricing.astro';
 
 const metadata = {
   title: 'Trekkings',
@@ -11,6 +12,16 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
+  <Whatsapp
+  images={[
+    {
+      src: '~/assets/images/WhatsApp_icon.png',
+      alt: 'Centro',
+    }
+  ]}
+/>
+
+
   <!-- Hero Widget ******************* -->
 
   <Hero3
@@ -125,7 +136,7 @@ const metadata = {
   <!-- Testimonials Widget *********** -->
 
   <Testimonials
-    title="Words from real customers"
+    title="Comentarios de nuestros clientes!"
     testimonials={[
       {
         testimonial: `The designs are not only visually appealing but also highly professional. The templates have saved me a significant amount of time while helping me make a lasting impression on my clients.`,
@@ -157,16 +168,110 @@ const metadata = {
     ]}
   />
 
+
+<!-- Pricing Widget ******************* -->
+
+<Prices
+  title="Nuetros precios"
+  subtitle="Paquetes más consumidos por nuestros clientes."
+  prices={[
+    {
+      title: 'Trekking Largo',
+      subtitle: 'Plaza Francia',
+      price: 5000,
+      period: '-',
+      items: [
+        {
+          description: 'Traslados',
+        },
+        {
+          description: 'Comidas durante todo el programa',
+        },{
+          description: 'Alojamiento en Penitentes(media pensión)',
+        },{
+          description: 'Campamento en Confluencia',
+        },{
+          description: 'Guía titulado',
+        },
+        {
+          description: 'Alojamiento en domo geodésico',
+        },
+        {
+          description: 'Comunicaciones internas',
+        },
+      ],
+      callToAction: {
+        
+        variant: 'primary',
+        text: 'Contactar',
+        href: '/contact',
+      
+      },
+    },
+    {
+      title: 'Trekking Corto',
+      subtitle: 'Plaza de Mulas',
+      price: 3000,
+      period: '-',
+      items: [
+        {
+          description: 'Traslados',
+        },
+        {
+          description: 'Comidas durante todo el programa',
+        },{
+          description: 'Alojamiento en Penitentes(media pensión)',
+        },{
+          description: 'Campamento en Confluencia',
+        },{
+          description: 'Guía titulado',
+        },
+        {
+          description: 'Alojamiento en domo geodésico',
+        },
+        {
+          description: 'Comunicaciones internas',
+        },
+      ],
+      callToAction: {
+        
+        variant: 'primary',
+        text: 'Contactar',
+        href: '/contact',
+      
+      },
+
+    },
+    {
+      title: 'Valle de Lágrimas',
+      subtitle: 'Avión de los Uruguayos',
+      price: 500,
+      period: '-',
+      items: [
+      {
+          description: 'Permiso de ingreso Valle Las Lágrimas',
+        },{
+          description: 'Tiendas de montaña 2/3 personas para campamentos',
+        },{
+          description: 'Soporte de Mulas para ascenso y regreso. Caballos para cruce de ríos',
+        },{
+          description: 'Todas las comidas y Viandas de marcha',
+        },{
+          description: 'Guías Montaña titulados o guía baqueano',
+        },{
+          description: 'Comunicaciones internas',
+        },
+      ],
+      callToAction: {
+        
+        variant: 'primary',
+        text: 'Contactar',
+        href: '/contact',
+      
+      },
+    },
+  ]}
+/>
   <!-- CallToAction Widget *********** -->
 
-  <CallToAction
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Unirme',
-        href: '/contact',
-      },
-    ]}
-    subtitle="Te interesaría realizar nuestros trekkings?"
-  />
 </Layout>

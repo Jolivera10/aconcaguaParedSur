@@ -30,15 +30,12 @@ export const headerData = {
       href: getPermalink('/homes/startup'),
     },
     {
-      text: 'Precios',
-      href: getPermalink('/pricing'),
-    },
-    {
       text: 'Contacto',
       href: getPermalink('/contact'),
     },
     
   ],
+  
   socialLinks: [
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/aconcaguaparedsur?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' },
     { ariaLabel: 'Gmail', icon: 'tabler:brand-gmail', href: '#' },

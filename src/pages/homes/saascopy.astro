@@ -1,5 +1,6 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
+import Whatsapp from  '~/components/widgets/Whatsapp.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
@@ -11,6 +12,15 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
+  <Whatsapp
+  images={[
+    {
+      src: '~/assets/images/WhatsApp_icon.png',
+      alt: 'Centro',
+    }
+  ]}
+/>
+
  
 
   <!-- Hero2 Widget ******************* -->
@@ -89,7 +99,7 @@ subtitle="El Cerro Aconcagua se erige como el corazón y el principal atractivo 
       {
         title: 'Instagram',
         description: '@aconcaguaparedsur',
-        icon: 'tabler:brand-instagram',
+        icon: 'tabler:brand-instagram'
       },
     ]}
   />

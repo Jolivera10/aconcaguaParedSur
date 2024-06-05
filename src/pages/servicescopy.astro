@@ -1,6 +1,7 @@
 ---
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Features2 from '~/components/widgets/Features2.astro';
+import Whatsapp from  '~/components/widgets/Whatsapp.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
@@ -10,6 +11,15 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
+  <Whatsapp
+  images={[
+    {
+      src: '~/assets/images/WhatsApp_icon.png',
+      alt: 'Centro',
+    }
+  ]}
+/>
+
   <!-- Hero Widget ******************* -->
 
   <Hero
@@ -30,16 +40,17 @@ const metadata = {
     columns={3}
     items={[
       {
-        title: 'Servicios en campamentos de aproximación',
+        title: 'Servicios en campamentos de altura',
         description:
           'En nuestros campamentos contamos con el servicio de tiendas dormitorio y tiendas estructurales dormitorio con cuchetas. Ponemos atención en que tengas comodidad y buen descanso para ahorrar energía y lograr una buena aclimatación en Aconcagua.',
-        icon: 'tabler:home',
+        icon: 'tabler:home'
       },
       {
         title: 'Servicios en campamentos base',
         description:
           'En nuestros campamentos contamos con el servicio de tiendas dormitorio y tiendas estructurales dormitorio con cuchetas. Ponemos atención en que tengas comodidad y buen descanso para ahorrar energía y lograr una buena aclimatación en Aconcagua.',
         icon: 'tabler:mountain',
+        url: '/terms3' 
       },
       {
         title: 'Servicios en Ciudad de Mendoza',
@@ -69,12 +80,14 @@ const metadata = {
         description:
           'Este servicio está pensado para aquellos montañistas que desean enfocarse en la cumbre y delegar los temas logísticos para guardar energía.',
         icon: 'tabler:fish',
+        url: '/terms' 
       },
       {
         title: 'Mulas para transporte',
         description:
           'En Aconcagua Pared Sur trabajamos con mulas de transporte propias por lo que garantizamos el seguro traslado de las cargas que transportamos y el arribo a destino en tiempo y forma.',
         icon: 'tabler:horse',
+        url: '/terms2' 
       },
      {
         title: 'Servicio de porteadores',
@@ -102,7 +115,7 @@ const metadata = {
         href: '/contact',
       },
     ]}
-    title="SOLICITA UNA COTIZACIÓN"
+    title="Solicita una cotización"
     subtitle="Para los servicios logísticos de tu expedición a medida"
   />
 </Layout>

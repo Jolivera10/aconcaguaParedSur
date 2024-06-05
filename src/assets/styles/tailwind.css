@@ -92,6 +92,84 @@
 }
 
 .julian {
-  background-image: url(../images/avion.jpg)
+  border-radius: 1%;
+  background-image: url(../images/imagen_bg_cortada_filtro.jpg)
+}
+.julian2 {
+  border-radius: 1%;
+  background-image: url(../images/expedicion_blog_edit.jpg)
+}
+
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px; /* Ajusta la distancia desde el borde inferior */
+    right: 20px;  /* Ajusta la distancia desde el borde derecho */
+    z-index: 1000;
+
+}
+
+.whatsapp-logo img {
+  width: 50px; /* Ajusta el tamaño del logo */
+  height: 50px;
+  cursor: pointer;
+}
+
+.wpp_img{
+  cursor: pointer;
+
+
+
+}
+
+.titulo{
+  color: white;
+}
+.p_back{
+  color: white;
+}
+.p_subtitulo{
+  color: aliceblue;
+}
+.titulo2{
+  color: white;
+}
+.p_back2{
+  color: white;
+}
+.p_subtitulo2{
+  color: aliceblue;
+}
+
+.zoom{
+  width: 100px; /* Ajusta el tamaño de la imagen */
+  height: auto;
+  transition: transform 0.3s ease, filter 0.3s ease; /* Añade una transición suave */
+}
+
+.zoom:hover img {
+  transform: scale(1.1); /* Aplica el efecto de zoom */
+  filter: brightness(0.7); /* Oscurece la imagen */
+}
+
+.foto{
+  width: 160px;
+  height:90px;
+  background-image: url('../images/logo.png');
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área */
+  background-position: center; /* Centra la imagen en el elemento */
   
+}
+
+.h1_servicios {
+  color: black;
+  cursor: pointer; /* Hace que el cursor cambie a una mano cuando se pasa sobre el título */
+}
+
+.h1_servicios:hover, .h1_servicios:active {
+  color: #FF7445; /* Cambia el color al pasar el cursor y al hacer clic */
+}
+.icono_blog{
+  display: flex;
+  align-items: center;
 }

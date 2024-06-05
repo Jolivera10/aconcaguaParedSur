@@ -1,16 +1,19 @@
 ---
 import { Carousel } from 'astro-bootstrap';
+import "bootstrap/dist/css/bootstrap.min.css";
 import type { CarouselSlideType } from 'astro-bootstrap';
+
 const slides: CarouselSlideType[] = [
-  { img: '/img/placeholder1.jpg', alt: 'First placeholder', active: true },
-  { img: '/img/placeholder2.jpg', alt: 'Second placeholder' },
-  { img: '/img/placeholder3.jpg', alt: 'Third placeholder' },
+  { img: '/src/assets/images/bg2.png', alt: 'First placeholder', active: true },
+  { img: '/src/assets/images/avion.jpg', alt: 'Second placeholder' },
+  { img: '/src/assets/images/bg2.png', alt: 'Third placeholder' },
+  
 ];
 
 const id = 'carouselExampleBasic';
 ---
 
-<Carousel {id} fade>
+<Carousel class='carru'  {id} fade>
   <Carousel.Indicators {id} {slides} />
   <Carousel.Inner>
     {
@@ -26,4 +29,8 @@ const id = 'carouselExampleBasic';
     }
   </Carousel.Inner>
   <Carousel.Controls id={id} />
+  <script>
+    // Astro will bundle and process this automatically
+    import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+  </script>
 </Carousel>

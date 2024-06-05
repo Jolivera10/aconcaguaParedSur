@@ -1,11 +1,11 @@
 ---
-import { Icon } from 'astro-icon/components';
 
+import Whatsapp from  '~/components/widgets/Whatsapp.astro';
 import Image from '~/components/common/Image.astro';
 import PostTags from '~/components/blog/Tags.astro';
 
-import { getPermalink } from '~/utils/permalinks';
-import { getFormattedDate } from '~/utils/utils';
+
+
 
 import type { Post } from '~/types';
 
@@ -18,18 +18,25 @@ const { post} = Astro.props;
 ---
 
 <section class="py-8 sm:py-16 lg:py-20 mx-auto">
+  <Whatsapp
+  images={[
+    {
+      src: '~/assets/images/WhatsApp_icon.png',
+      alt: 'Centro',
+    }
+  ]}
+/>
   <article>
     <header class={post.image ? '' : ''}>
       <div class="flex justify-between flex-col sm:flex-row max-w-3xl mx-auto mt-0 mb-2 px-4 sm:px-6 sm:items-center">
         <p>
-          <Icon name="tabler:clock" class="w-4 h-4 inline-block -mt-0.5 dark:text-gray-400" />
-          <time datetime={String(post.publishDate)} class="inline-block">{getFormattedDate(post.publishDate)}</time>
+          
           {
             post.author && (
               <>
                 {' '}
-                · <Icon name="tabler:user" class="w-4 h-4 inline-block -mt-0.5 dark:text-gray-400" />
-                <span class="inline-block">{post.author}</span>
+                 
+                
               </>
             )
           }
@@ -37,20 +44,12 @@ const { post} = Astro.props;
             post.category && (
               <>
                 {' '}
-                ·{' '}
-                <a class="hover:underline inline-block" href={getPermalink(post.category.slug, 'category')}>
-                  {post.category.title}
-                </a>
+                {' '}
+                
               </>
             )
           }
-          {
-            post.readingTime && (
-              <>
-                &nbsp;· <span>{post.readingTime}</span> min read
-              </>
-            )
-          }
+        
         </p>
       </div>
 
@@ -59,11 +58,13 @@ const { post} = Astro.props;
       >
         {post.title}
       </h1>
-      <p
-        class="max-w-3xl mx-auto mt-4 mb-8 px-4 sm:px-6 text-xl md:text-2xl text-muted dark:text-slate-400 text-justify"
-      >
+      <section class="icono_blog">
+      <p class="max-w-3xl mx-auto  mt-4 mb-12 px-4 sm:px-6 text-xl md:text-2xl text-muted dark:text-slate-400 text-justify font-bold">
+
         {post.excerpt}
       </p>
+    </section>
+      
 
       {
         post.image ? (

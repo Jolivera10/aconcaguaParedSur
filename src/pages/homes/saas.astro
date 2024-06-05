@@ -1,10 +1,13 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-
+import Whatsapp from  '~/components/widgets/Whatsapp.astro';
 import Header from '~/components/widgets/Header.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
+import Prices from '~/components/widgets/Pricing.astro';
+
+
 
 import { headerData } from '~/navigation';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
@@ -15,6 +18,16 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
+  <Whatsapp
+  images={[
+    {
+      src: '~/assets/images/WhatsApp_icon.png',
+      alt: 'Centro',
+    }
+  ]}
+/>
+
+
   <Fragment slot="header">
     <Header
       {...headerData}
@@ -107,6 +120,141 @@ const metadata = {
       image: {
         src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
         alt: 'Emily Kennedy Image',
+      },
+    },
+  ]}
+/>
+
+<Prices
+  title="Nuetros precios"
+  subtitle="Paquetes más consumidos por nuestros clientes."
+  prices={[
+    {
+      title: 'Trekking Largo',
+      subtitle: 'Plaza Francia',
+      price: 5000,
+      period: '-',
+      items: [
+        {
+          description: 'Traslados',
+        },
+        {
+          description: 'Comidas durante todo el programa',
+        },{
+          description: 'Alojamiento en Penitentes(media pensión)',
+        },{
+          description: 'Campamento en Confluencia',
+        },{
+          description: 'Guía titulado',
+        },
+        {
+          description: 'Alojamiento en domo geodésico',
+        },
+        {
+          description: 'Comunicaciones internas',
+        },
+      ],
+      callToAction: {
+        
+        variant: 'primary',
+        text: 'Contactar',
+        href: '/contact',
+      
+      },
+    },
+    {
+      title: 'Trekking Largo',
+      subtitle: 'Plaza Francia',
+      price: 5000,
+      period: '-',
+      items: [
+        {
+          description: 'Traslados',
+        },
+        {
+          description: 'Comidas durante todo el programa',
+        },{
+          description: 'Alojamiento en Penitentes(media pensión)',
+        },{
+          description: 'Campamento en Confluencia',
+        },{
+          description: 'Guía titulado',
+        },
+        {
+          description: 'Alojamiento en domo geodésico',
+        },
+        {
+          description: 'Comunicaciones internas',
+        },
+      ],
+      callToAction: {
+        
+        variant: 'primary',
+        text: 'Contactar',
+        href: '/contact',
+      
+      },
+    },
+    {
+      title: 'Trekking Corto',
+      subtitle: 'Plaza de Mulas',
+      price: 3000,
+      period: '-',
+      items: [
+        {
+          description: 'Traslados',
+        },
+        {
+          description: 'Comidas durante todo el programa',
+        },{
+          description: 'Alojamiento en Penitentes(media pensión)',
+        },{
+          description: 'Campamento en Confluencia',
+        },{
+          description: 'Guía titulado',
+        },
+        {
+          description: 'Alojamiento en domo geodésico',
+        },
+        {
+          description: 'Comunicaciones internas',
+        },
+      ],
+      callToAction: {
+        
+        variant: 'primary',
+        text: 'Contactar',
+        href: '/contact',
+      
+      },
+
+    },
+    {
+      title: 'Valle de Lágrimas',
+      subtitle: 'Avión de los Uruguayos',
+      price: 500,
+      period: '-',
+      items: [
+      {
+          description: 'Permiso de ingreso Valle Las Lágrimas',
+        },{
+          description: 'Tiendas de montaña 2/3 personas para campamentos',
+        },{
+          description: 'Soporte de Mulas para ascenso y regreso. Caballos para cruce de ríos',
+        },{
+          description: 'Todas las comidas y Viandas de marcha',
+        },{
+          description: 'Guías Montaña titulados o guía baqueano',
+        },{
+          description: 'Comunicaciones internas',
+        },
+      ],
+      callToAction: {
+        
+        variant: 'primary',
+        text: 'Contactar',
+        href: '/contact',
+      
       },
     },
   ]}

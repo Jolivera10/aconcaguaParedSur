@@ -1,25 +1,41 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-
 import Hero from '~/components/widgets/Hero.astro';
-import Note from '~/components/widgets/Note.astro';
 import Content from '~/components/widgets/Content.astro';
-import Brands from '~/components/widgets/Brands.astro';
+import Whatsapp from  '~/components/widgets/Whatsapp.astro';
+import Carrusel from '~/components/widgets/Carrusel.astro';
+
+
+
+export interface Props {
+	title: string;
+}
 
 
 
 const metadata = {
   title: 'Aconcagua Pared Sur',
   ignoreTitleTemplate: true,
+  
 };
 ---
 
 <Layout metadata={metadata}>
+
   <!-- Hero Widget ******************* -->
+  <Whatsapp
+  images={[
+    {
+      src: '~/assets/images/WhatsApp_icon.png',
+      alt: 'Centro',
+    }
+  ]}
+/>
 
   <Hero
-    image={{ src: '~/assets/images/imagen_bg.jpg', alt: 'AstroWind Hero Image' }}
+  
   >
+  
     <Fragment slot="title">
       Especialistas <span class="hidden xl:inline">en expediciones al</span>
       <span class="text-accent dark:text-white highlight"> Aconcagua.</span>
@@ -33,9 +49,13 @@ const metadata = {
     </Fragment>
   </Hero>
 
+
+ 
+
   <!-- Note Widget ******************* -->
 
-  <Note />
+
+  
 
   <!-- Features Widget *************** -->
 
@@ -175,24 +195,4 @@ const metadata = {
   <!-- HighlightedPosts Widget ******* -->
 
 
-  <Brands
-  title="Quality certifications & Supports & Certifications"
-  subtitle=""
-  icons={[]}
-  images={[
-    {
-      src: '~/assets/images/cert2.png',
-      alt: 'Centro',
-    },
-    {
-      src: '~/assets/images/cert3.png',
-      alt: 'Guias',
-    },
-    {
-      src: '~/assets/images/cert1.png',
-      alt: 'UOI',
-    },
-   
-  ]}
-/>
 </Layout>

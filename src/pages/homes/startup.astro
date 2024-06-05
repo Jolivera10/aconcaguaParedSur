@@ -1,13 +1,13 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 
-import Hero3 from '~/components/widgets/Hero3.astro';
+import Hero4 from '~/components/widgets/Hero4.astro';
+import Whatsapp from  '~/components/widgets/Whatsapp.astro';
 
 import Features2 from '~/components/widgets/Features2.astro';
 
 import Stats from '~/components/widgets/Stats.astro';
 
-import Brands from '~/components/widgets/Brands.astro';
 
 
 
@@ -17,9 +17,18 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
+  <Whatsapp
+  images={[
+    {
+      src: '~/assets/images/WhatsApp_icon.png',
+      alt: 'Centro',
+    }
+  ]}
+/>
+
   <!-- Hero Widget ******************* -->
 
-  <Hero3
+  <Hero4
     tagline="Sobre Nosotros"
   >
     <Fragment slot="title">
@@ -28,7 +37,7 @@ const metadata = {
       > Sur.
     </Fragment>
 
-  </Hero3>
+  </Hero4>
 
   <!-- Features2 Widget ************** -->
 
@@ -52,26 +61,6 @@ const metadata = {
       { title: 'Clientes satisfrechos', amount: '3K' },
     ]}
   />
-  <Brands
-  title="Quality certifications & Supports & Certifications"
-  subtitle=""
-  icons={[]}
-  images={[
-    {
-      src: '~/assets/images/cert2.png',
-      alt: 'Centro',
-    },
-    {
-      src: '~/assets/images/cert3.png',
-      alt: 'Guias',
-    },
-    {
-      src: '~/assets/images/cert1.png',
-      alt: 'UOI',
-    },
-   
-  ]}
-/>
 
   <!-- Brands Widget ****************** -->
 
