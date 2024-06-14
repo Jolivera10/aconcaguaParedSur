@@ -3,7 +3,7 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero4 from '~/components/widgets/Hero4.astro';
 import Whatsapp from  '~/components/widgets/Whatsapp.astro';
-
+import FAQs from '~/components/widgets/FAQs.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 
 import Stats from '~/components/widgets/Stats.astro';
@@ -43,12 +43,52 @@ const metadata = {
 
   <Features2
     title=""
-    subtitle="Aconcagua Pared Sur es una de las empresas mas contratadas de expediciones y trekkings en el Cerro Aconcagua, con una reputación envidiable de éxito de cumbre y un historial de seguridad para cliente sin igual. En nuestras expediciones encontrarás los guías profesionales certificados más valiosos, el conocimiento que sólo puede darte una empresa local, la mejor infraestructura logística y sobre todo una relación personal única, ya que nos enfocamos en tratar a todos nuestros visitantes como alguien especial. Todo nuestro equipo comparte la pasión por la montaña. Nuestra misión es ayudar a quienes nos visitan a alcanzar sus metas personales y, sobre todo, lograr transmitirles esa pasión para que vivan una experiencia inolvidable. Únase a nosotros en la montaña y comience a vivir una experiencia de vida única, de la mano de los especialistas en Aconcagua."
+    subtitle="En Aconcagua Pared Sur, vivimos para la aventura. Con más de 25 años desafiando montañas y senderos, hemos convertido nuestra pasión en profesión. Organizamos expediciones guiadas, conquistamos la Cordillera de los Andes en esquís, a pie y en bicicleta. Para mantenernos y financiar nuestras hazañas, creamos una empresa de obras y servicios de ingeniería. Y entonces nos preguntamos: ¿Por qué no combinar ambas experiencias? Así nació Aconcagua Pared Sur. Nos distinguimos por nuestra dedicación y experiencia. En nuestras expediciones, te espera un equipo de especialistas único: guías certificados, campamenteros, porters y arrieros. Ofrecemos la mejor logística y, sobre todo, un trato personalizado. Todos compartimos una pasión desbordante por la montaña. Nuestra misión es ayudarte a alcanzar tus metas y encenderte con nuestra misma pasión. Sumate a nosotros en Aconcagua y compartí una experiencia inolvidable."
   >
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Features2>
+
+  <FAQs
+    title="¿Por qué elegirnos?"
+    subtitle=""
+    tagline= "Aconcagua Pared Sur Expediciones"
+    classes={{ container: 'max-w-6xl' }}
+    items={[
+      {
+        title: 'Experiencia especializada',
+        description:
+          "Con más de 25 años de trayectoria, contamos con una vasta experiencia en expediciones al cerro Aconcagua.",
+      },
+      {
+        title: 'Servicios integrales',
+        description:
+          'Ofrecemos una amplia gama de servicios logísticos que cubren todas las necesidades de tu expedición, desde transporte hasta alojamiento y asistencia en montaña.',
+      },
+      {
+        title: 'Equipo experto',
+        description:
+          "Nuestro equipo está compuesto por profesionales altamente capacitados y especializados en montañismo, garantizando tu seguridad y comodidad en todo momento.",
+      },
+      {
+        title: "Compromiso con la calidad",
+        description:
+          "Nos esforzamos por brindar un servicio de alta calidad en cada aspecto de tu expedición, desde la planificación hasta la ejecución.",
+      },
+      {
+        title: 'Infraestructura propia',
+        description:
+          "Somos propietarios de todos los servicios en montaña, lo que nos permite tener un control total sobre la calidad y la logística de nuestras expediciones.",
+      },
+      {
+        title: 'Atención personalizada',
+        description:
+          "Nos comprometemos a brindarte una atención personalizada y adaptada a tus necesidades individuales, asegurando una experiencia única y memorable en Aconcagua.",
+      },
+    ]}
+  />
+
 
   <!-- Stats Widget ****************** -->
 

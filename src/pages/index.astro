@@ -1,10 +1,8 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-import Hero from '~/components/widgets/Hero.astro';
 import Content from '~/components/widgets/Content.astro';
 import Whatsapp from  '~/components/widgets/Whatsapp.astro';
-import Carrusel from '~/components/widgets/Carrusel.astro';
-
+import Hero3 from '~/components/widgets/Hero3.astro';
 
 
 export interface Props {
@@ -32,22 +30,25 @@ const metadata = {
   ]}
 />
 
-  <Hero
+  <Hero3
   
   >
   
     <Fragment slot="title">
-      Especialistas <span class="hidden xl:inline">en expediciones al</span>
-      <span class="text-accent dark:text-white highlight"> Aconcagua.</span>
+      Visitá 
+      <span class="text-accent dark:text-white highlight"> Aconcagua</span>
+      <span class="hidden xl:inline">con Pared Sur Expediciones.</span>
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">Pared Sur</span> Nuestro equipo de guías expertos te ofrece apoyo personalizado y seguridad en cada paso. Ya seas principiante o experimentado, te ayudaremos a alcanzar la cumbre más alta de América. 
-        ¡Únete a nosotros para una experiencia inolvidable en la montaña!</span
+        Nuestro equipo profesional de campamenteros, guías y porters te ofrece apoyo personalizado
+        y seguridad en cada paso. Seas principiante o experimentado, <span class="font-semibold">Aconcagua Pared Sur</span> te llevará a
+        la cima de América. ¡Uníte a nosotros!
+        </span
       >
     </Fragment>
-  </Hero>
+  </Hero3>
 
 
  
@@ -63,29 +64,33 @@ const metadata = {
 
   <Content
     isReversed
-    tagline="Elige tu Aventura"
-    title="Expediciones al Aconcagua y Servicios"
+    tagline="¡Elegí tu aventura para esta temporada!"
+    title="Expediciones, trekkings y servicios especializados de excelencia"
     items={[
       {
         title: 'Ruta Normal',
         description:
-          'Alcanzá la cumbre del cerro más alto de América, en un programa que incluye el trekking a Plaza Francia para aclimatar',
+          'Alcanzá la cumbre del cerro más alto de América con nuestro programa que incluye trekking a Plaza Francia para aclimatar.',
+          link: '/get-started-website-with-astro-tailwind-css'
       },
       {
         title: 'Ruta 360º',
         description:
-          'Combina dos rutas alrededor del Aconcagua, la cara este y noroeste. Ascender a través del valle de Vacas y descender a través de la ruta normal le permite disfrutar de la magnificencia de la montaña más alta de América.',
+          'Descubrí dos facetas del Aconcagua con nuestra ruta que abarca la cara este y noroeste. Experimentá ascender a través del valle de Vacas y descender por la ruta normal, disfrutando plenamente de la majestuosidad de la montaña más alta de América.',
+          link: '/how-to-customize-astrowind-to-your-brand'
       },
       {
         title: 'Ruta Polacos',
         description:
-          'La ruta Normal Extendida incluye además del trekking a Plaza Francia, el ascenso del cerro Bonete (5000m) como parte de la aclimatación para alcanzar la cumbre del Aconcagua',
+          'Experimentá más allá del trekking a Plaza Francia. Con nuestra Ruta Normal Extendida, conquistá el cerro Bonete (5000m) como parte de la aclimatación para alcanzar la cumbre del Aconcagua.',
+          link: '/useful-resources-to-create-websites'
       },
     
       {
         title: 'Ruta Falso Polacos',
         description:
-          'A través de esta ruta el Aconcagua nos muestra su cara más rústica. Ésta ruta posee menos tráfico que la ruta normal.',
+          'Conquistá el lado más rústico del Aconcagua a través de esta ruta menos transitada que la normal.',
+          link: '/markdown-elements-demo-post'
       },
       
     ]}
@@ -95,8 +100,8 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Expediciones</h3>
-      Requieren una logística impecable desde nuestra parte y una excelente preparación física y psicológica de los miembros del equipo.
+      <a class="h1_servicios" href="/homes/saas"><h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Expediciones</h3></a>
+      Logística excelente y ocupada en cada detalle. 
     </Fragment>
 
     <Fragment slot="bg">
@@ -111,16 +116,19 @@ const metadata = {
     items={[
       {
         title: 'Trekking Corto - Plaza Francia',
-        description: `Una caminata muy amigable que te brinda una experiencia emocionante y un fuerte encuentro con la naturaleza. Te lleva a los glaciares de Plaza Francia, en la base del magnífico Muro Sur del Aconcagua con sus 3000 metros verticales.`,
+        description: `Explorá los glaciares de Plaza Francia (4100 msnm), en la base de la impresionante Pared Sur Sur del Aconcagua.`,
+        link: '/astrowind-template-in-depth'
       },
       {
         title: 'Trekking Largo - Plaza de Mulas',
         description:
-          'Una aventura donde alcanzarás Plaza Francia y Plaza de Mulas, que te permitirá participar en el mundo exclusivo de los escaladores de todo el mundo, preparándose para la cumbre.',
+          'Visitá Plaza Francia y Plaza de Mulas (4300 msnm), donde podrás presenciar la preparación de los escaladores para la cumbre.',
+          link: '/landing'
       },
       {
         title: 'Trekking Valle de Lágrimas - Avión de los Uruguayos',
-        description: `Una caminata que te brindará una experiencia emocionante y un fuerte encuentro con la naturaleza. Llegaremos hasta el lugar donde se vivió el Milagro de los Andes y homenajearemos a los uruguayos que pasaron por esta tragedia.`,
+        description: `Viví una experiencia de película en el lugar la tragedia de los uruguayos en los Andes.`,
+        link: '/avion'
       },
       
     ]}
@@ -130,8 +138,8 @@ const metadata = {
     }}
   >
   <Fragment slot="content">
-    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Trekkings</h3>
-    Los trekkings en el Parque Aconcagua premian al visitante con una vista magnífica y la emocionante experiencia de acercarse a la base de la mítica Pared Sur del Aconcagua.
+    <a class="h1_servicios" href="/services"><h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Trekkings</h3></a>
+    Experiencias magníficas y emocionantes
   </Fragment>
 
     <Fragment slot="bg">
@@ -145,26 +153,68 @@ const metadata = {
     isReversed
     isAfterContent
     items={[
-      {
-        title: 'Servicio completo de asistencia al montañista',
+       {
+        title: 'Servicios en Ciudad de Mendoza',
         description:
-          'Si eres un experimentado montañista o guía de montaña, entonces esta asistencia completa de servicios logísticos es ideal para el respaldo de tu expedición.',
-      },
-     
-      {
-        title: 'Un respaldo confiable para tu expedición',
+          '',
+          icon: 'tabler:building',
+        },
+        {
+        title: 'Transporte',
         description:
-          'Somos propietarios de todos los servicios en montaña como mulas, campamentos, porteadores, infraestructura y equipamiento requerido para prestar el mejor y más confiable servicio para nuestras expediciones.',
-      },
-      {
-        title: 'Transporte y Traslado. Cdad Mendoza - Penitentes',
+          '',
+          icon: 'tabler:car',
+        },
+        {
+        title: 'Servicios en penitentes',
         description:
-          'Nuestro objetivo es que al arribar a Mendoza estés libre de preocupaciones y que puedas iniciar tu experiencia en el Cerro Aconcagua sin ningún contratiempo.',
+          '',
+          icon: 'tabler:mountain',
+        },
+        {
+        title: 'Mulas para transporte',
+        description:
+          '',
+          icon: 'tabler:horse',
+          link: '/terms2' 
+        },
+        {
+        title: 'Servicios en campamentos base',
+        description:
+          '',
+          icon: 'tabler:mountain',
+          link:'/terms3'
+        },
+      {
+        title: 'Servicios en campamentos de altura',
+        description:
+          '',
+          icon: 'tabler:home',
+          
+       
       },
       {
-        title: 'Alojamientos en campos base',
-        description: `En nuestros campamentos contamos con el servicio de tiendas dormitorio y tiendas estructurales dormitorio con cuchetas.`,
-      },
+        title: 'Servicio de porteadores',
+        description:
+          '',
+          icon: 'tabler:shoe',
+        },
+        {
+        title: 'Asesoramiento y comunicación',
+        description:
+          '',
+          icon: 'tabler:phone',
+        },
+      
+        {
+        title: 'Gestión de permisos oficiales',
+        description:
+          '',
+          icon: 'tabler:pencil',
+        },
+      
+       
+    
     ]}
     image={{
       src: '~/assets/images/imagen3.jpg',
@@ -172,8 +222,8 @@ const metadata = {
     }}
   >
   <Fragment slot="content">
-    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Servicios logísticos Aconcagua</h3>
-    Concéntrese solo en disfrutar de esta experiencia única y dejar la logística en manos de especialistas en aconcagua.
+    <a class="h1_servicios" href="/servicescopy"><h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Servicios logísticos</h3> </a>
+    Disfrutá la experiencia, nosotros nos encargamos del resto. Somos especialistas en Aconcagua desde hace más de 25 años!
 
   </Fragment>
 

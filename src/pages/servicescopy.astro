@@ -23,78 +23,89 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="Servicios Logísticos"
-    title="Los servicios logísticos más confiables para escaladores!"
-    subtitle="Somos propietarios de todos los servicios en montaña como mulas, campamentos, infraestructura y equipamiento requerido para prestar el mejor y más confiable servicio para nuestras expediciones. De esta manera, nos aseguramos de estar en todos los detalles de las necesidades de nuestros clientes, sin tercerizar en manos externas."
+    tagline="Profesionalismo, calidad y personalización"
     image={{
       src: '~/assets/images/expedicion_blog.jpg',
       alt: 'Services',
     }}
-  />
+  >
+    <Fragment slot="title">
+      Garantizá una excelente experiencia en Aconcagua con nuestros <br />
+      <span class="text-accent dark:text-white highlight"> Servicios Logísticos</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Con más de 25 años de experiencia en expediciones al Aconcagua, nos dedicamos meticulosamente a cada detalle para asegurar una experiencia excepcional para nuestros clientes. Poseemos y gestionamos todos los aspectos de nuestros servicios, desde mulas y campamentos hasta la infraestructura y el equipamiento necesario. Esta integración nos permite ofrecer un servicio altamente personalizado y confiable, atendiendo directamente cada necesidad de nuestros clientes.
+    </Fragment>
+  </Hero>
 
   <!-- Features2 Widget ************** -->
 
   <Features2
     title="Explora nuestros servicios"
-    subtitle="Descubre todo lo que tenemos para proponerte!"
+    subtitle="Descubrí todo lo que tenemos para ofrecerte"
     columns={3}
     items={[
       {
-        title: 'Servicios en campamentos de altura',
-        description:
-          'En nuestros campamentos contamos con el servicio de tiendas dormitorio y tiendas estructurales dormitorio con cuchetas. Ponemos atención en que tengas comodidad y buen descanso para ahorrar energía y lograr una buena aclimatación en Aconcagua.',
-        icon: 'tabler:home'
-      },
-      {
-        title: 'Servicios en campamentos base',
-        description:
-          'En nuestros campamentos contamos con el servicio de tiendas dormitorio y tiendas estructurales dormitorio con cuchetas. Ponemos atención en que tengas comodidad y buen descanso para ahorrar energía y lograr una buena aclimatación en Aconcagua.',
-        icon: 'tabler:mountain',
-        url: '/terms3' 
-      },
-      {
         title: 'Servicios en Ciudad de Mendoza',
-        description: `Alojamiento, asistencia, comidas y tour por Mendoza.`,
+        description: `Alojamiento, asistencia y comidas por la ciudad de Mendoza.`,
         icon: 'tabler:building',
       },
       {
         title: 'Transporte ',
         description:
-          'Desde Aeropuerto de Mendoza a Hotel en Mendoza y viceversa. -Transporte en vehículo privado : Mendoza - Penitentes - Mendoza.- Transporte desde Penitentes hasta las entradas del Parque y retorno.-',
+          'Transfers privados desde Aeropuerto a Hotel, Penitentes y entradas al Parque Nacional.',
         icon: 'tabler:car',
-      },
-      {
-        title: 'Asesoramiento y comunicación' ,
-        description:
-          'Asistencia para obtención de permisos de ascenso. Comunicación radial permanente desde los Campamentos Base con Mendoza y Penitentes. Asistencia para la coordinación de sus reservas, envío y recepción de equipos.',
-        icon: 'tabler:phone',
       },
       {
         title: 'Servicios en Penitentes',
         description:
-          'Penitentes es el lugar en la montaña donde se encuentra nuestro centro logístico y el hotel donde se alojan nuestros clientes. Se encuentra a 182 km de la Ciudad de Mendoza y se accede a través de ruta de montaña.',
+          'Alojamiento, asistencia y comidas en Penitentes.',
         icon: 'tabler:mountain',
-      },
-      {
-        title: 'Comidas en campamentos de altura',
-        description:
-          'Este servicio está pensado para aquellos montañistas que desean enfocarse en la cumbre y delegar los temas logísticos para guardar energía.',
-        icon: 'tabler:fish',
-        url: '/terms' 
       },
       {
         title: 'Mulas para transporte',
         description:
-          'En Aconcagua Pared Sur trabajamos con mulas de transporte propias por lo que garantizamos el seguro traslado de las cargas que transportamos y el arribo a destino en tiempo y forma.',
+          'Traslado de carga en mulas desde Horcones a Confluencia, Plaza de Mulas y Plaza Argentina.',
         icon: 'tabler:horse',
         url: '/terms2' 
       },
-     {
+      {
+        title: 'Servicios en campamentos base',
+        description:
+          'Alojamiento en domos, asistencia, comidas, Wi-Fi, duchas en Confluencia, Plaza de Mulas y Plaza Argentina.',
+        icon: 'tabler:mountain',
+        url: '/terms3' 
+      },
+      {
+        title: 'Servicios en campamentos de altura',
+        description:
+          'Alojamiento en Nido de Cóndores y Berlín.',
+        icon: 'tabler:home'
+      },
+      {
         title: 'Servicio de porteadores',
         description:
-          'El porteador se encarga de ayudar al montañista en el traslado a campamentos de altura del peso extra. Para grupos de montañistas,  puede ayudar en el traslado  de equipo comunitario como carpas, comida y combustible.',
+          'Traslado de cargas en altura',
         icon: 'tabler:shoe',
       },
+    
+      
+     
+      {
+        title: 'Asesoramiento y comunicación' ,
+        description:
+          'Orientación experta y soporte continuo.',
+        icon: 'tabler:phone',
+      },
+    
+      {
+        title: 'Gestión de permisos oficiales',
+        description:
+          'Ejecución de trámites estatles para el Parque Provincial Aconcagua.',
+        icon: 'tabler:pencil', 
+      },
+   
     ]}
   />
 

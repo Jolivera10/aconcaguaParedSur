@@ -1,7 +1,7 @@
 ---
 publishDate: 2023-08-06T00:00:00Z
 title: Travesía 360º
-excerpt: Itinerario de 19 días - Servicios full - Trekking por Valle Vacas.
+excerpt: Itinerario de 19 días - Trekking por Valle Vacas.
 image: '~/assets/images/expedicion_blog.jpg'
 tags:
   - travesía 360º
@@ -9,7 +9,30 @@ tags:
 
 ---
 
-## Congue justo vulputate nascetur convallis varius orci fringilla nulla pharetr
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit, augue malesuada natoque in ad erat aliquam facilisi, lacus rhoncus mattis nostra et a. Mauris malesuada rutrum dis libero egestas mus vulputate, fermentum ad morbi phasellus faucibus tellus leo urna, blandit ullamcorper diam imperdiet dictumst litora. Fringilla eros malesuada lobortis mi odio metus leo, blandit imperdiet augue fames aliquam ultricies tortor massa, duis magnis hendrerit id magna sociosqu. Aptent mi imperdiet id sapien suscipit ut netus turpis, lacinia ac porttitor potenti dui taciti at egestas, fermentum neque nascetur sodales tortor nunc congue.
+Ascendiendo por el Valle de Vacas y descendiendo por la Ruta Normal, este exclusivo programa de 19 días ofrece una vista integral de la montaña más alta de América, permitiendo disfrutar su magnitud en todo su esplendor.
+
+
+| Día  | Ubicación                                         | Altitud    |
+| :--- | :------------------------------------------------ | :--------: |
+| 01   | Mendoza                                           | 760 Mts    |
+| 02   | Mendoza / Puente de Inca                          | 2700 Mts   |
+| 03   | Puente de Inca / Pampa de Leñas                   | 2950 Mts   |
+| 04   | Pampa de Leñas / Casa de Piedra                   | 3250 Mts   |
+| 05   | Aproximación desde Casa de Piedra a Plaza Argentina | 4200 Mts   |
+| 06   | Día de descanso en Plaza Argentina                | 4200 Mts   |
+| 07   | Porteo de equipo y comida a Campo 1               | 4900 Mts   |
+| 08   | Descanso de Campo Base                            | 4200 Mts   |
+| 09   | Ascenso de Campo Base a Campo 1                   | 4900 Mts   |
+| 10   | Porteo de equipo y comida a Campo 2               | 5500 Mts   |
+| 11   | Ascenso a Campo 2                                 | 5500 Mts   |
+| 12   | Aclimatación en Campo 2                           | 5550 Mts   |
+| 13   | Ascenso a Campo 3 “Colera”                        | 5970 Mts   |
+| 14   | Cumbre                                            | 6962 Mts   |
+| 15   | Días de reserva en caso de mal tiempo             | -          |
+| 16   | Días de reserva en caso de mal tiempo             | -          |
+| 17   | Descenso al Campo Base Plaza de Mulas             | -          |
+| 18   | Regreso a Puente de Inca y Mendoza                | -          |
+| 19   | Mendoza                                           | -          |
+
 

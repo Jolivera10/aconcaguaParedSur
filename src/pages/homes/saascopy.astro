@@ -26,10 +26,11 @@ const metadata = {
   <!-- Hero2 Widget ******************* -->
 
   <Hero2
-    tagline="ACONCAGUA, EL GIGANTE DE AMÉRICA"
+    tagline="VISITÁ"
     actions={[
-      { variant: 'primary', target: '_blank', text: 'Expediciones', href: '/services' },
-      { text: 'Trekkings', href: '/homes/saas' },
+      { text: 'Expediciones', href: '/homes/saas' },
+      { variant: 'primary', target: '_blank', text: 'Trekkings', href: '/services' },
+      { text: 'Servicios', href: '/servicescopy' },
     ]}
     image={{
       src: '~/assets/images/aconcagua_sobre.jpg',
@@ -37,16 +38,20 @@ const metadata = {
     }}
   >
     <Fragment slot="title">
-      Aconcagua <br /> el gigante de <span class="text-accent dark:text-white highlight"
-        >América</span
-      > <br />
+      <span class="text-accent dark:text-white highlight"
+        >Aconcagua</span
+      ><br /> el gigante de América <br />
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        El Aconcagua, con una altitud de 6.959 metros sobre el nivel del mar, <span class="font-semibold">es la montaña más alta de América</span></span
-      >
-      y una de las más imponentes del mundo. Ubicada en la provincia de Mendoza, Argentina, cerca de la frontera con Chile, esta majestuosa cumbre es un destino codiciado por alpinistas y aventureros de todas partes del mundo.
+        El cerro Aconcagua, con sus imponentes 6.959 metros sobre el nivel del mar, <span class="font-semibold">es la montaña más alta de América</span>
+      </span>
+      y una de las más majestuosas del planeta. Situada en la provincia de Mendoza, Argentina, cerca de la frontera con Chile, esta impresionante cumbre atrae a alpinistas y aventureros de todas partes del mundo.
+      
+      <br>
+      <span class="font-semibold">¿Querés conocerlo? Sumáte a Aconcagua Pared Sur Expediciones.</span>
+      
     </Fragment>
   </Hero2>
 
@@ -65,7 +70,7 @@ const metadata = {
 
 <Features2
 title="Sobre el Aconcagua"
-subtitle="El Cerro Aconcagua se erige como el corazón y el principal atractivo del Parque Provincial Aconcagua, una de las áreas protegidas más impresionantes de Argentina. Este parque abarca 71.000 hectáreas en la provincia de Mendoza, situado a unos kilómetros al este de la frontera con Chile. Las aguas del parque fluyen hacia el interior de Mendoza a través de los ríos Horcones, Vacas y Cuevas. El Aconcagua es la montaña más alta del Hemisferio Sur y Occidental, y la cima más elevada del continente americano. Es un destacado ícono en el prestigioso circuito de las siete cumbres. Además, es ideal para iniciarse en el alpinismo de gran altitud, ya que su elevación, junto con sus condiciones geográficas y climáticas, ofrece un escenario perfecto tanto para desafíos moderados como para prepararse para las mayores hazañas deportivas que demandan las cumbres de ocho mil metros. "
+subtitle="El cerro Aconcagua se alza como el corazón y el principal atractivo del Parque Provincial Aconcagua, una de las áreas protegidas más impactantes de Argentina. Este parque abarca 71.000 hectáreas en la provincia de Mendoza, ubicado a unos kilómetros al este de la frontera con Chile. Además, las aguas del parque desembocan en Mendoza a través de los ríos Horcones, Vacas y Cuevas. Asimismo, el Aconcagua es la montaña más alta del Hemisferio Sur y Occidental, y la cima más elevada del continente americano. Es, por tanto, un destacado ícono en el prestigioso circuito de las Siete Cumbres. Además, resulta ideal para iniciarse en el montañismo de gran altitud, ya que su elevación, junto con sus condiciones geográficas y climáticas, ofrece un escenario perfecto tanto para desafíos moderados como para prepararse para las mayores proezas deportivas que demandan las cumbres de ocho mil metros."
 >
 <Fragment slot="bg">
   <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -74,16 +79,15 @@ subtitle="El Cerro Aconcagua se erige como el corazón y el principal atractivo 
 
   <!-- Content Widget **************** -->
 
-  <!-- Pricing Widget ******************* -->
 
   <!-- Steps2 Widget ****************** -->
 
   <Steps2
-    title="Le llamó la atención este artículo?"
-    subtitle="Tiene preguntas? Contáctenos para obtener mas información acerca de lo que tenemos para ofrecerle..."
+    title="¿Tenés alguna consulta?"
+    subtitle="Contactános para que un especialista de Aconcagua Pared Sur pueda asesorarte."
     callToAction={{
       text: 'Click aquí',
-      href: '/contact',
+      href: 'https://web.whatsapp.com',
     }}
     items={[
       {
@@ -101,6 +105,11 @@ subtitle="El Cerro Aconcagua se erige como el corazón y el principal atractivo 
         description: '@aconcaguaparedsur',
         icon: 'tabler:brand-instagram'
       },
+      {
+        title: 'Facebook',
+        description: '@aconcaguaparedsur',
+        icon: 'tabler:brand-facebook'
+      },
     ]}
   />
 
@@ -108,7 +117,7 @@ subtitle="El Cerro Aconcagua se erige como el corazón y el principal atractivo 
 
   <BlogLatestPosts
     id="blog"
-    title="Estás con ganas de conocer el Aconcagua?"
+    title="¿Estás con ganas de conocer el Aconcagua?"
     information={`Explora algunos de los paquetes y servicios que tenemos para vos.`}
   >
     <Fragment slot="bg">

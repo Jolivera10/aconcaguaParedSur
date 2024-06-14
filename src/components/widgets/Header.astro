@@ -74,7 +74,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
     ]}
   >
     <div class:list={[{ 'mr-auto rtl:mr-0 rtl:ml-auto': position === 'right' }, 'flex justify-between']}>
-      <a class="flex items-center foto" href={getHomePermalink()}>
+     <a class="flex items-center foto" href={getHomePermalink()}>
       </a>
       <div class="flex items-center md:hidden">
         <ToggleMenu />
@@ -151,7 +151,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
             ''
           )
         }
-       <div class="md:flex md:items-center md:justify-between py-6 md:py-8">
+       <div class="md:flex md:items-center md:justify-between py-3 md:py-3">
         {
           socialLinks?.length ? (
             <ul class="flex mb-4 md:order-1 -ml-2 md:ml-4 md:mb-0 rtl:ml-0 rtl:-mr-2 rtl:md:ml-0 rtl:md:mr-4">

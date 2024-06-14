@@ -4,7 +4,6 @@ import Hero3 from '~/components/widgets/Hero3.astro';
 import Whatsapp from  '~/components/widgets/Whatsapp.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 import Layout from '~/layouts/PageLayout.astro';
-import Prices from '~/components/widgets/Pricing.astro';
 
 const metadata = {
   title: 'Trekkings',
@@ -26,8 +25,8 @@ const metadata = {
 
   <Hero3
     tagline="Trekkings"
-    title="Aventuráte al Aconcagua con nuestros servicios para escalarla."
-    subtitle="Los trekkings en el Parque Aconcagua premian al visitante con una vista magnífica y la emocionante experiencia de acercarse a la base de la mítica Pared Sur del Aconcagua, con sus casi 3.000 metros de altura y cubierto de glaciares colgantes, es una de las más grandes del mundo... "
+    title="Aventuráte al Aconcagua con nuestros trekkings."
+    subtitle="Los trekkings en el Parque Aconcagua te ofrecen vistas magníficas y la emocionante oportunidad de acercarte a la base de la mítica Pared Sur del Aconcagua. Con casi 3.000 metros de altura y cubierto de glaciares colgantes, es una de las paredes más impresionantes del mundo. Tenemos dos itinerarios diseñados para que disfrutes de una experiencia inolvidable y explores los diferentes campamentos base del Aconcagua."
   
   />
 
@@ -39,21 +38,21 @@ const metadata = {
     isReversed
     items={[
       {
-        title: 'Aconcagua desde adentro',
+        title: 'Descubrí la grandeza del Aconcagua',
         description:
-          'El Aconcagua ... . Antiguo altar Incas nos deslumbra con su paisaje primitivo y hermoso. Un viaje único en el interior de los Andes, es mucho más que maravillosos paisajes, cielos azules, fuertes vientos y las nubes majestuosas; mucho más que rocas, las estrellas y el silencio...',
+          'El Cerro Aconcagua nos maravilla con su paisaje primitivo y majestuoso. Es una experiencia que va más allá de la vista de magníficos paisajes, cielos azules, fuertes vientos y majestuosas nubes. Sumergíte en la experiencia completa que abarca desde las rocas hasta las estrellas y el silencio profundo que sólo la naturaleza puede ofrecer.',
         icon: 'tabler:mountain',
       },
       {
-        title: 'Aventura inolvidable',
+        title: 'Preparáte para la aventura de tu vida',
         description:
-          'Nos adentramos en el reino del Centinela de Piedra. La aventura comienza en la base de la mítica Pared Sur del Aconcagua, con glaciares colgantes y las paredes de casi 3.000 metros de altura, una de las más grandes del mundo.',
+          'La emocionante travesía comienza en la base de la icónica Pared Sur del Aconcagua, rodeada de glaciares colgantes y paredes que alcanzan casi 3.000 metros de altura, siendo una de las más impresionantes del planeta.',
         icon: 'tabler:shoe',
       },
       {
-        title: 'Debe estar preparado!',
+        title: 'Listo para el desafío',
         description:
-          'Este Programa de Trekking está diseñado para personas con buena salud y estado físico óptimo (por ejemplo capaces de marchar 3 o 4 veces por semana 1 a 2 horas).',
+          'Este programa de trekking de tres días está diseñado para aquellos con una buena salud y un estado físico óptimo. Nuestro equipo de especialistas garantiza una aventura segura y gratificante. ¡Uníte a nosotros y descubrí la grandeza del Aconcagua!',
         icon: 'tabler:heart',
       },
     ]}
@@ -63,7 +62,7 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Trekking Corto - Plaza Francia</h3>
+      <a href="/astrowind-template-in-depth"> <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Trekking Corto (Plaza Francia) -  <span class="text-accent dark:text-white highlight"> 3 días</span></h3> </a>
     </Fragment>
   </Content>
 
@@ -73,21 +72,21 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Descripción',
+        title: 'Viví la aventura en Plaza de Mulas',
         description:
-          'La ciudad de tela. La urbe más alta del mundo. La Torre de Babel de carpas. El campamento base Plaza de Mulas en el Parque Aconcagua, a 4.260 m.s.n.m. sobre la ruta normal es una muy especial población de alta montaña que cobra vida cada temporada donde conviven personas de los rincones más exóticos del planeta.',
+          'El campamento base Plaza de Mulas (4.260 m.s.n.m.) en la ruta normal del Parque Aconcagua, cobra vida cada temporada con personas de todo el mundo. Además de explorar Plaza Francia y la imponente Pared Sur, te invitamos a hacer cumbre en el Cerro Bonete (5000 mts) y disfrutar de una vista exclusiva de la Pared Oeste del Aconcagua y sus alrededores.',
         icon: 'tabler:mountain',
       },
       {
-        title: 'Acceso',
+        title: 'Acceso fácil y vistas espectaculares',
         description:
-          'El acceso es fácil ya que existe una senda perfectamente marcada por el tránsito permanente de montañeros y ganado. El cruce del río se efectúa por puentes.',
+          'El acceso es sencillo, con una senda claramente marcada por el tránsito de montañeros y ganado, y puentes seguros para cruzar los ríos. Este trekking de siete días te permitirá ver las dos caras más impresionantes del Aconcagua: Plaza Francia y su Pared Sur, y el largo pero recompensante camino a Plaza de Mulas, donde podrás disfrutar la inolvidable Pared Oeste.',
         icon: 'tabler:shoe',
       },
       {
-        title: 'Comunidad expedicionista',
+        title: 'Conectáte y alcanzá la cumbre del Cerro Bonete',
         description:
-          'Estar en contacto con gente de todo el mundo, que como nosotros, va en busca de un desafío interior de plena comunión con la montaña.',
+          'En Plaza de Mulas, compartirás experiencias con montañistas de todo el mundo. Luego, podrás subir al Cerro Bonete (5.000 mts) para una vista impresionante del Aconcagua y su campamento base. La cumbre del Bonete ofrece un paisaje indescriptible que queremos que vivas por vos mismo. ¡Uníte a esta aventura única!',
         icon: 'tabler:man',
       },
      
@@ -97,29 +96,29 @@ const metadata = {
       alt: 'PlazaDeMulas Image',
     }}
   >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Trekking Largo - Plaza de Mulas</h3>
-    </Fragment>
+  <Fragment slot="content">
+    <a href="/landing"> <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Trekking Largo (Plaza de Mulas) –   <span class="text-accent dark:text-white highlight"> 7 días</span></h3> </a>
+  </Fragment>
   </Content>
   <Content
     isReversed
     items={[
       {
-        title: 'Vive la historia',
+        title: 'Sumergíte en la historia',
         description:
-          'Te llevaremos a conocer y a contemplar de cerca el increíble entorno en donde sucedió una de las más impactantes historias de supervivencia y superación humana. Tres días en el Valle de las Lágrimas, en plena Cordillera de los Andes.',
+          'Descubrí de cerca el asombroso escenario donde ocurrió uno de los relatos más impactantes de supervivencia y coraje humano. Durante tres días, exploraremos el Valle de las Lágrimas en Malargüe.',
         icon: 'tabler:plane',
       },
       {
-        title: 'Aventura inolvidable',
+        title: 'Experiencia de película',
         description:
-          'Trekking avión de los uruguayos es una excursión al lugar donde cayó el avión de los uruguayos en el accidente de 1972, un lugar cargado de mística e historia. Te llevaremos a conocer y a contemplar de cerca el increíble entorno donde trascendió este suceso de supervivencia y superación humana.',
+          'El trekking al Avión de los Uruguayos va más allá de una simple excursión. Adéntrate en el lugar donde se estrelló el avión en el accidente de 1972, un sitio cargado de mística e historia.',
         icon: 'tabler:camera',
       },
       {
-        title: 'Comodidad al máximo',
+        title: 'Viví la emoción',
         description:
-          'Descansando en confortables campamentos y rodeados de los más experimentados guías, viviremos con emoción, energía y entusiasmo la historia de un grupo de hombres que no se rindieron ante la adversidad',
+          'Acompañados por guías expertos, viviremos esta historia con intensidad y entusiasmo. ¡Preparáte para descubrir esta emocionante experiencia en pleno corazón de la Cordillera de los Andes!',
         icon: 'tabler:heart',
       },
     ]}
@@ -128,9 +127,9 @@ const metadata = {
       alt: 'Features Image',
     }}
   >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Trekking Valle de Lágrimas - Avión de los Uruguayos</h3>
-    </Fragment>
+  <Fragment slot="content">
+    <a href="/avion"> <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Trekking Valle de Lágrimas – <span class="text-accent dark:text-white highlight"> 3 días</span></h3> </a>
+  </Fragment>
   </Content>
 
   <!-- Testimonials Widget *********** -->
@@ -171,107 +170,7 @@ const metadata = {
 
 <!-- Pricing Widget ******************* -->
 
-<Prices
-  title="Nuetros precios"
-  subtitle="Paquetes más consumidos por nuestros clientes."
-  prices={[
-    {
-      title: 'Trekking Largo',
-      subtitle: 'Plaza Francia',
-      price: 5000,
-      period: '-',
-      items: [
-        {
-          description: 'Traslados',
-        },
-        {
-          description: 'Comidas durante todo el programa',
-        },{
-          description: 'Alojamiento en Penitentes(media pensión)',
-        },{
-          description: 'Campamento en Confluencia',
-        },{
-          description: 'Guía titulado',
-        },
-        {
-          description: 'Alojamiento en domo geodésico',
-        },
-        {
-          description: 'Comunicaciones internas',
-        },
-      ],
-      callToAction: {
-        
-        variant: 'primary',
-        text: 'Contactar',
-        href: '/contact',
-      
-      },
-    },
-    {
-      title: 'Trekking Corto',
-      subtitle: 'Plaza de Mulas',
-      price: 3000,
-      period: '-',
-      items: [
-        {
-          description: 'Traslados',
-        },
-        {
-          description: 'Comidas durante todo el programa',
-        },{
-          description: 'Alojamiento en Penitentes(media pensión)',
-        },{
-          description: 'Campamento en Confluencia',
-        },{
-          description: 'Guía titulado',
-        },
-        {
-          description: 'Alojamiento en domo geodésico',
-        },
-        {
-          description: 'Comunicaciones internas',
-        },
-      ],
-      callToAction: {
-        
-        variant: 'primary',
-        text: 'Contactar',
-        href: '/contact',
-      
-      },
 
-    },
-    {
-      title: 'Valle de Lágrimas',
-      subtitle: 'Avión de los Uruguayos',
-      price: 500,
-      period: '-',
-      items: [
-      {
-          description: 'Permiso de ingreso Valle Las Lágrimas',
-        },{
-          description: 'Tiendas de montaña 2/3 personas para campamentos',
-        },{
-          description: 'Soporte de Mulas para ascenso y regreso. Caballos para cruce de ríos',
-        },{
-          description: 'Todas las comidas y Viandas de marcha',
-        },{
-          description: 'Guías Montaña titulados o guía baqueano',
-        },{
-          description: 'Comunicaciones internas',
-        },
-      ],
-      callToAction: {
-        
-        variant: 'primary',
-        text: 'Contactar',
-        href: '/contact',
-      
-      },
-    },
-  ]}
-/>
   <!-- CallToAction Widget *********** -->
 
 </Layout>

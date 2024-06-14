@@ -103,15 +103,15 @@
 
 .whatsapp {
     position: fixed;
-    bottom: 20px; /* Ajusta la distancia desde el borde inferior */
-    right: 20px;  /* Ajusta la distancia desde el borde derecho */
+    bottom: 10px; /* Ajusta la distancia desde el borde inferior */
+    right: 10px;  /* Ajusta la distancia desde el borde derecho */
     z-index: 1000;
 
 }
 
 .whatsapp-logo img {
-  width: 50px; /* Ajusta el tamaño del logo */
-  height: 50px;
+  width: 45px; /* Ajusta el tamaño del logo */
+  height: 45px;
   cursor: pointer;
 }
 
@@ -153,8 +153,8 @@
 }
 
 .foto{
-  width: 160px;
-  height:90px;
+  width: 103px;
+  height:58px;
   background-image: url('../images/logo.png');
   background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área */
   background-position: center; /* Centra la imagen en el elemento */

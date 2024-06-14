@@ -5,7 +5,7 @@ import Header from '~/components/widgets/Header.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
-import Prices from '~/components/widgets/Pricing.astro';
+
 
 
 
@@ -46,23 +46,25 @@ const metadata = {
   <!-- Hero2 Widget ******************* -->
 
   <Hero2
-    tagline="PAQUETES DE EXPEDICIÓN AL ACONCAGUA"
+    tagline="Expediciones a Aconcagua"
     image={{
       src: '~/assets/images/expedicion1.jpg',
-      alt: 'AstroWind Hero Image',
+      alt: 'Expedicion al Aconcagua',
     }}
   >
     <Fragment slot="title">
-      Elige tu expedición a la<br /> cima del <span class="text-accent dark:text-white highlight"
-        >Aconcagua.</span
+      Elegí tu ruta hacia la <br /> cumbre de <span class="text-accent dark:text-white highlight"
+        >América.</span
       ><br />
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        Nuestras expediciones son programas que requieren una logística impecable desde nuestra parte <span class="font-semibold">y una excelente preparación física y psicológica de   </span>los miembros del equipo que trata de atacar la cumbre.</span
+        Tenemos un equipo especializado que garantiza una excelente logística.<span class="font-semibold"> Estamos en cada detalle.</span> Nuestras expediciones varían dependiendo la duración y las rutas que elijas. 
+        Somos montañistas experimentados, conocemos las necesidades de nuestros clientes y nos 
+        encargamos de que ellos se concentren únicamente en aclimatarse y mantenerse fuertes para llegar a la
+         cumbre.</span
       >
-      Somos montañistas y sabemos los servicios que se necesitan en la montaña, es por eso que nos ocupamos de todos los detalles con el fin de que nuestros clientes sólo se preocupen por lo único que tiene que preocuparse: aclimatar y mantenerse fuertes para llegar a la cima.
     </Fragment>
   </Hero2>
 
@@ -89,7 +91,6 @@ const metadata = {
 
   <!-- Content Widget **************** -->
 
-  <!-- Pricing Widget ******************* -->
 
   <!-- FAQs Widget ******************* -->
   <Testimonials
@@ -125,140 +126,7 @@ const metadata = {
   ]}
 />
 
-<Prices
-  title="Nuetros precios"
-  subtitle="Paquetes más consumidos por nuestros clientes."
-  prices={[
-    {
-      title: 'Trekking Largo',
-      subtitle: 'Plaza Francia',
-      price: 5000,
-      period: '-',
-      items: [
-        {
-          description: 'Traslados',
-        },
-        {
-          description: 'Comidas durante todo el programa',
-        },{
-          description: 'Alojamiento en Penitentes(media pensión)',
-        },{
-          description: 'Campamento en Confluencia',
-        },{
-          description: 'Guía titulado',
-        },
-        {
-          description: 'Alojamiento en domo geodésico',
-        },
-        {
-          description: 'Comunicaciones internas',
-        },
-      ],
-      callToAction: {
-        
-        variant: 'primary',
-        text: 'Contactar',
-        href: '/contact',
-      
-      },
-    },
-    {
-      title: 'Trekking Largo',
-      subtitle: 'Plaza Francia',
-      price: 5000,
-      period: '-',
-      items: [
-        {
-          description: 'Traslados',
-        },
-        {
-          description: 'Comidas durante todo el programa',
-        },{
-          description: 'Alojamiento en Penitentes(media pensión)',
-        },{
-          description: 'Campamento en Confluencia',
-        },{
-          description: 'Guía titulado',
-        },
-        {
-          description: 'Alojamiento en domo geodésico',
-        },
-        {
-          description: 'Comunicaciones internas',
-        },
-      ],
-      callToAction: {
-        
-        variant: 'primary',
-        text: 'Contactar',
-        href: '/contact',
-      
-      },
-    },
-    {
-      title: 'Trekking Corto',
-      subtitle: 'Plaza de Mulas',
-      price: 3000,
-      period: '-',
-      items: [
-        {
-          description: 'Traslados',
-        },
-        {
-          description: 'Comidas durante todo el programa',
-        },{
-          description: 'Alojamiento en Penitentes(media pensión)',
-        },{
-          description: 'Campamento en Confluencia',
-        },{
-          description: 'Guía titulado',
-        },
-        {
-          description: 'Alojamiento en domo geodésico',
-        },
-        {
-          description: 'Comunicaciones internas',
-        },
-      ],
-      callToAction: {
-        
-        variant: 'primary',
-        text: 'Contactar',
-        href: '/contact',
-      
-      },
 
-    },
-    {
-      title: 'Valle de Lágrimas',
-      subtitle: 'Avión de los Uruguayos',
-      price: 500,
-      period: '-',
-      items: [
-      {
-          description: 'Permiso de ingreso Valle Las Lágrimas',
-        },{
-          description: 'Tiendas de montaña 2/3 personas para campamentos',
-        },{
-          description: 'Soporte de Mulas para ascenso y regreso. Caballos para cruce de ríos',
-        },{
-          description: 'Todas las comidas y Viandas de marcha',
-        },{
-          description: 'Guías Montaña titulados o guía baqueano',
-        },{
-          description: 'Comunicaciones internas',
-        },
-      ],
-      callToAction: {
-        
-        variant: 'primary',
-        text: 'Contactar',
-        href: '/contact',
-      
-      },
-    },
-  ]}
-/>
 
   <CallToAction
   actions={[

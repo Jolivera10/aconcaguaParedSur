@@ -1,7 +1,6 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
-import Prices from '~/components/widgets/Pricing.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
@@ -21,92 +20,7 @@ const metadata = {
 
   <!-- Pricing Widget ******************* -->
 
-  <Prices
-    title="Nuetros precios"
-    subtitle="Paquetes más consultados."
-    prices={[
-      {
-        title: 'Expedición',
-        subtitle: 'Lorem',
-        price: 1000,
-        period: '-',
-        items: [
-          {
-            description: 'Lorem',
-          },
-          {
-            description: 'Lorem',
-          },{
-            description: 'Lorem',
-          },{
-            description: 'Lorem',
-          },{
-            description: 'Lorem',
-          },
-        ],
-        callToAction: {
-          target: '_blank',
-          text: 'Consultar',
-          href: '/contact',
-        },
-      },
-      {
-        title: 'Lorem',
-        subtitle: 'Lorem',
-        price: 69,
-        period: '-',
-        items: [
-          {
-            description: 'Lorem',
-          },
-          {
-            description: 'Lorem',
-          }, {
-            description: 'Lorem',
-          }, {
-            description: 'Lorem',
-          }, {
-            description: 'Lorem',
-          }, {
-            description: 'Lorem',
-          },
-        ],
-        callToAction: {
-          target: '_blank',
-          text: 'Consultar',
-          href: '/contact',
-        },
-
-      },
-      {
-        title: 'Plaza Mulan',
-        subtitle: 'Lorem',
-        price: 199,
-        period: '-',
-        items: [
-        {
-            description: 'Lorem',
-          },{
-            description: 'Lorem',
-          },{
-            description: 'Lorem',
-          },{
-            description: 'Lorem',
-          },{
-            description: 'Lorem',
-          },{
-            description: 'Lorem',
-          },
-        ],
-        callToAction: {
-          target: '_blank',
-          text: 'Contáctenos',
-          href: '/contact',
-        },
-      },
-    ]}
-  />
-
+  
   <!-- Features3 Widget ************** -->
 
 

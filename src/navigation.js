@@ -3,9 +3,8 @@ import { getPermalink} from './utils/permalinks';
 export const headerData = {
   links: [
   
-    {
-      text: 'Oferta',
-      links: [
+    
+     
         {
           text: 'Expediciones',
           href: getPermalink('/homes/saas'),
@@ -19,20 +18,16 @@ export const headerData = {
           href: getPermalink('/servicescopy'),
         },
        
-      ],
-    },
+        {
+          text: 'Nosotros',
+          href: getPermalink('/homes/startup'),
+        },
+    
     {
       text: 'Aconcagua',
       href: getPermalink('/homes/saascopy'),
     },
-    {
-      text: 'Nosotros',
-      href: getPermalink('/homes/startup'),
-    },
-    {
-      text: 'Contacto',
-      href: getPermalink('/contact'),
-    },
+    
     
   ],
   
