@@ -1,22 +1,14 @@
 ---
-publishDate: 2024-05-15T00:00:00Z
-author: Pared Sur
 title: Ruta Normal
 excerpt: Itinerario de 18 días - Trekking a Plaza Francia incluido.
 image: ~/assets/images/imagen_blog2.jpg
-category: Expediciones
-tags:
-  - ruta normal
-  - expediciones
-
-  
 ---
 
 
 
 ## <a name="Descripción"></a>Descripción
 
-Nuestro programa de 18 días está diseñado para optimizar tu aclimatación y maximizar tus posibilidades de éxito en la cumbre. Perfecto para montañistas con experiencia previa en aclimatación o aquellos que prefieren ascensos más cortos.
+Nuestro programa de 18 días está diseñado para optimizar tu aclimatación y maximizar tus posibilidades de éxito en la cumbre. Perfecto para montañistas con experiencia previa en aclimatación o aquellos que prefieren ascensos más cortos. Trekking a Plaza Francia incluido.
 
 
 | Día  | Ubicación                            | Altitud    |

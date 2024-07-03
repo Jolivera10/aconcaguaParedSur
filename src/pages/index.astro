@@ -2,7 +2,7 @@
 import Layout from '~/layouts/PageLayout.astro';
 import Content from '~/components/widgets/Content.astro';
 import Whatsapp from  '~/components/widgets/Whatsapp.astro';
-import Hero3 from '~/components/widgets/Hero3.astro';
+import Hero4 from '~/components/widgets/Hero4.astro';
 
 
 export interface Props {
@@ -30,7 +30,7 @@ const metadata = {
   ]}
 />
 
-  <Hero3
+  <Hero4
   
   >
   
@@ -41,14 +41,14 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
+      <span class="sm:inline">
         Nuestro equipo profesional de campamenteros, guías y porters te ofrece apoyo personalizado
         y seguridad en cada paso. Seas principiante o experimentado, <span class="font-semibold">Aconcagua Pared Sur</span> te llevará a
         la cima de América. ¡Uníte a nosotros!
         </span
       >
     </Fragment>
-  </Hero3>
+  </Hero4>
 
 
  
@@ -95,7 +95,7 @@ const metadata = {
       
     ]}
     image={{
-      src: '~/assets/images/imagen1.jpg',
+      src: '~/assets/images/imagen1.png',
       alt: 'Imagen1',
     }}
   >
@@ -117,23 +117,23 @@ const metadata = {
       {
         title: 'Trekking Corto - Plaza Francia',
         description: `Explorá los glaciares de Plaza Francia (4100 msnm), en la base de la impresionante Pared Sur Sur del Aconcagua.`,
-        link: '/astrowind-template-in-depth'
+        link: '/trekking_corto'
       },
       {
         title: 'Trekking Largo - Plaza de Mulas',
         description:
           'Visitá Plaza Francia y Plaza de Mulas (4300 msnm), donde podrás presenciar la preparación de los escaladores para la cumbre.',
-          link: '/landing'
+          link: '/trekking_largo'
       },
       {
         title: 'Trekking Valle de Lágrimas - Avión de los Uruguayos',
         description: `Viví una experiencia de película en el lugar la tragedia de los uruguayos en los Andes.`,
-        link: '/avion'
+        link: '/trekking_avion'
       },
       
     ]}
     image={{
-      src: '~/assets/images/imagen2.JPG',
+      src: '~/assets/images/imagen2.jpg',
       alt: 'Trekking Image',
     }}
   >
@@ -217,7 +217,7 @@ const metadata = {
     
     ]}
     image={{
-      src: '~/assets/images/imagen3.jpg',
+      src: '~/assets/images/imagen3.png',
       alt: 'Imagen Massages',
     }}
   >

@@ -1,11 +1,7 @@
 ---
-publishDate: 2024-05-15T00:00:00Z
 title: Glaciar de los Polacos
 excerpt: Itinerario de 20 días - Técnica y desafiante
 image: '~/assets/images/imagen_blog1.jpg'
-tags:
-  - expediciones
-  - polacos
 ---
 
 La ruta del Glaciar de los Polacos ofrece un ascenso técnico de 20 días para montañistas y aventureros experimentados, ideal para quienes desean conquistar la cumbre más alta de América del Sur de una manera única y desafiante. Nuestro itinerario incluye un recorrido de 360°, explorando todos los campamentos y disfrutando de vistas panorámicas del majestuoso Aconcagua.

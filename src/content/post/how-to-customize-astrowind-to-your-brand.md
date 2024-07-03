@@ -1,12 +1,7 @@
 ---
-publishDate: 2023-08-06T00:00:00Z
-title: Travesía 360º
+title: Ruta 360º
 excerpt: Itinerario de 19 días - Trekking por Valle Vacas.
-image: '~/assets/images/expedicion_blog.jpg'
-tags:
-  - travesía 360º
-  - expediciones
-
+image: '~/assets/images/travesia360.png'
 ---
 
 

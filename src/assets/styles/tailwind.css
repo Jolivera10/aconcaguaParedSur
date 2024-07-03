@@ -91,13 +91,17 @@
   margin-top: 0;
 }
 
-.julian {
-  border-radius: 1%;
-  background-image: url(../images/imagen_bg_cortada_filtro.jpg)
-}
 .julian2 {
   border-radius: 1%;
+  background-image: url(../images/imagen_principal_index.png);
+}
+.julian1 {
+  border-radius: 1%;
   background-image: url(../images/expedicion_blog_edit.jpg)
+}
+.julian3 {
+  border-radius: 1%;
+  background-image: url(../images/trekking_pagina.jpg);
 }
 
 
@@ -109,18 +113,8 @@
 
 }
 
-.whatsapp-logo img {
-  width: 45px; /* Ajusta el tamaño del logo */
-  height: 45px;
-  cursor: pointer;
-}
-
-.wpp_img{
-  cursor: pointer;
 
 
-
-}
 
 .titulo{
   color: white;
