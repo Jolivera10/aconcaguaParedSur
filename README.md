@@ -24,5 +24,3 @@ Visita el Aconcagua con Pared Sur Expediciones. Nuestro equipo profesional de ca
 
 Creada a través de un template de la página de Astro
 Las tecnologías que use fueron Astro, Tailwind CSS, JS, HTML y CSS puro.
-Es mi primer despliegue de una página, aunque fue através de un template aprendí mucho y me inserté en el mundo del desarrollo web con mi primer proyecto.
-Puede estar sujeto a errores o malas prácticas. 
