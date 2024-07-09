@@ -93,7 +93,9 @@
 
 .julian2 {
   border-radius: 1%;
-  background-image: url(../images/imagen_principal_index.png);
+  background-image: url(../images/aconcagua_main_fondo.jpg);
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .julian1 {
   border-radius: 1%;

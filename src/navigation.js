@@ -7,25 +7,25 @@ export const headerData = {
      
         {
           text: 'Expediciones',
-          href: getPermalink('/homes/saas'),
+          href: getPermalink('/homes/expediciones'),
         },
         {
           text: 'Trekkings',
-          href: getPermalink('/services'),
+          href: getPermalink('/homes/trekkings'),
         },
         {
           text: 'Servicios',
-          href: getPermalink('/servicescopy'),
+          href: getPermalink('/homes/servicios'),
         },
        
         {
           text: 'Nosotros',
-          href: getPermalink('/homes/startup'),
+          href: getPermalink('/homes/nosotros'),
         },
     
     {
       text: 'Aconcagua',
-      href: getPermalink('/homes/saascopy'),
+      href: getPermalink('/homes/aconcagua'),
     },
     
     
@@ -45,7 +45,7 @@ export const footerData = {
       title: 'Ayuda',
       links: [
         { text: 'Contáctenos', href: '/contact' },
-        { text: 'Aconcagua', href: '/homes/saascopy' },
+        { text: 'Aconcagua', href: '/homes/aconcagua' },
         { text: 'Politica de privacidad' },
         { text: 'Términos y condiciones' },
       ],

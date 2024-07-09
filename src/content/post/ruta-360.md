@@ -1,7 +1,7 @@
 ---
 title: Ruta 360º
 excerpt: Itinerario de 19 días - Trekking por Valle Vacas.
-image: '~/assets/images/travesia360.png'
+image: '~/assets/images/travesia_travesia.jpeg'
 ---
 
 

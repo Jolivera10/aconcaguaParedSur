@@ -1,6 +1,6 @@
 site:
   name: Aconcagua Pared Sur
-  site: 'https://astrowind.vercel.app'
+  site: 'https://aconcaguaparedsur.com'
   base: '/'
   trailingSlash: false
 
@@ -9,9 +9,9 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Pared Sur Aconcagua
+    default: Aconcagua Pared Sur
     template: '%s — Aconcagua Pared Sur'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "Embárcate en una aventura inolvidable y descubre la majestuosidad del Aconcagua, la montaña más alta de América. En Pared Sur, te llevamos a explorar la base y las cumbres de esta impresionante montaña, donde la naturaleza se encuentra con la cultura en un entorno espectacular."
   robots:
     index: true
     follow: true
